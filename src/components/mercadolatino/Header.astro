@@ -17,7 +17,7 @@ const pathname = rmTrailingSlash(Astro.url.pathname);
 		<nav class="flex items-center justify-between" aria-label="Global">
 			<!-- <a href="/" class="-m-1.5 p-1.5">
 				<p class="font-bold text-4xl text-brand-secondary">Astro<span class="text-brand-primary bg-brand-primary/5 px-3 ml-1 rounded-lg">Pie</span></p>
-			</a>
+			</a>-->
 			<div class="flex lg:hidden">
 				<button
 					type="button"
@@ -40,11 +40,11 @@ const pathname = rmTrailingSlash(Astro.url.pathname);
 							d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
 					</svg>
 				</button>
-			</div> -->
+			</div>
 			<Picture
 					class:list={""}
 					src={Logo}
-					height={40}
+					height={80}
 					formats={["avif", "webp"]}
 					alt="Ginger Teriyaki Logo"
 					loading={"eager"}
@@ -77,8 +77,8 @@ const pathname = rmTrailingSlash(Astro.url.pathname);
 				x-cloak
 			>
 				<div class="flex items-center justify-between">
-					<a href="/" class="-m-1.5 p-1.5">
-						<p class="font-bold text-4xl text-brand-secondary">Astro<span class="text-brand-primary">Pie</span></p>
+					<a href="/gingerteriyaki" class="-m-1.5 p-1.5">
+						<p class="font-bold text-4xl text-brand-secondary">Mercado <span class="text-brand-primary">Latino</span></p>
 					</a>
 					<button type="button" class="-m-2.5 p-2.5 text-brand-primary" @click="open = false">
 						<span class="sr-only">Close menu</span>
