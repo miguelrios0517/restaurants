@@ -1,0 +1,251 @@
+---
+import Layout from "~/layouts/mercadolatino/Layout.astro";
+import Section from "~/components/Section.astro";
+import Hero from "~/components/Hero.astro";
+import { Picture, Image } from "astro:assets";
+import Badge from "~/components/Badge.astro";
+import Button from "~/components/Button.astro";
+
+import ButtonCallUs from "~/components/mercadolatino/ButtonCallUs.astro";
+import Grid from "~/components/Grid.astro";
+import Heading from "~/components/Heading.astro";
+import WideImage from "~/components/WideImage.astro";
+import ReviewSlider from "~/components/mercadolatino/ReviewSlider.astro";
+
+// Images
+import HeroImage from "~/assets/images/mercadolatino/grocery.jpg"
+import FrontStore from "~/assets/images/mercadolatino/el_mercado_latino_store_cropped.jpg";
+import Service1 from "~/assets/images/mercadolatino/grocery_2.jpg";
+import Service2 from "~/assets/images/mercadolatino/butcher_2.jpg";
+import Service3 from "~/assets/images/mercadolatino/restaurant_2_cropped.jpg";
+import About from "~/assets/images/mercadolatino/panaderia.jpg";
+import Promotion from "~/assets/images/mercadolatino/chicharon_guac.jpg";
+
+
+
+
+
+import Teriyaki from "~/assets/images/mercadolatino/teriyaki.jpeg";
+import TeriyakiWide from "~/assets/images/mercadolatino/teriyaki_wide.jpeg";
+import Teriyaki2 from "~/assets/images/mercadolatino/teriyaki2.jpeg";
+import Teriyaki3 from "~/assets/images/mercadolatino/teriyaki3.jpeg";
+import FriedRice from "~/assets/images/mercadolatino/friedrice.jpeg";
+import Gyoza from "~/assets/images/mercadolatino/gyoza.jpeg";
+import Katsu from "~/assets/images/mercadolatino/katsu.jpeg";
+
+import PizzaHero from "~/assets/images/mercadolatino/pexels-shvetsa-5953523.jpg";
+import Pizza from "~/assets/images/mercadolatino/pizza.png";
+import Spaghetti from "~/assets/images/mercadolatino/spaghetti.png";
+import Fish from "~/assets/images/mercadolatino/fish.png";
+import DecorativeImage from "~/assets/images/mercadolatino/pexels-shvetsa-5953523.jpg";
+import reviewAuthors from "~/assets/images/template/review-authors.png";
+import Dessert from "~/assets/images/mercadolatino/dessert.png";
+import Mussels from "~/assets/images/mercadolatino/mussels2.png";
+---
+
+<Layout title="Home" pageTitle="Home" description="Welcome to our restaurant!" dataTheme="mercado-latino">
+	<Section hero={true} class:list={"brand-bg"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
+				<Badge color="primary" title="Authentic Mexican Grocery" />
+				<h1 class="font-black">Auburn's Fresh Grocery & Restaurant</h1>
+
+				<p>
+					Welcome to El Mercado Latino! Your go-to Auburn market and kitchen for authentic flavor. From fresh local produce and premium meats to delicious hot meals and daily-baked pan dulce, we have everything you love. Stop by to shop and dine today!
+				</p>
+
+				<span class="text-brand-black font-medium">✔ Call Ahead for Takeout</span>
+
+				<div class="mt-8 flex items-center gap-x-8">
+					<Button color="secondary" url="/book">Get Directions</Button>
+					<ButtonCallUs />
+				</div>
+			</div>
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto mercado-image-blob"}
+					src={HeroImage}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+					loading={"eager"}
+					fetchpriority={"high"}
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+	<WideImage image={FrontStore} alt="Just an image" class:list={"aspect-video lg:aspect-[16/6]"} />
+
+	<!-- Dishes -->
+	<Section class:list={"brand-bg"}>
+		<Heading>
+			<h2 slot="heading-title" class="font-black h2">Departments</h2>
+			<p slot="heading-content">
+Explore our fresh aisles, custom butcher counter, and authentic kitchen.
+			</p>
+		</Heading>
+
+		<Grid>
+			<div slot="grid-content-1">
+				<div class="flex flex-col items-center prose text-center">
+					<Picture
+						class:list={"not-prose w-full h-auto mercado-image-blob"}
+						src={Service1}
+						formats={["avif", "webp"]}
+						alt="A description of my image."
+					/>
+					<h3 class="h4 mt-0 font-black">Fresh Aisle</h3>
+					<p>
+						From organic Washington apples to your favorite pantry staples, we stock everything you need to feed your family. High quality meets everyday low prices.
+					</p>
+				</div>
+			</div>
+
+			<div slot="grid-content-2">
+				<div class="flex flex-col items-center prose text-center">
+					<Picture
+						class:list={"not-prose w-full h-auto mercado-image-blob"}
+						src={Service2}
+						formats={["avif", "webp"]}
+						alt="A description of my image."
+					/>
+					<h3 class="h4 mt-0 font-black">Prime Cuts</h3>
+					<p>
+						Our expert in-house butchers offer premium, sustainably raised meats, custom cuts, and house-made sausages. Taste the difference of truly fresh quality.
+					</p>
+				</div>
+			</div>
+
+			<div slot="grid-content-3">
+				<div class="flex flex-col items-center prose text-center">
+					<Picture
+						class:list={"not-prose w-full h-auto mercado-image-blob"}
+						src={Service3}
+						formats={["avif", "webp"]}
+						alt="A description of my image."
+					/>
+					<h3 class="h4 mt-0 font-black">Taqueria</h3>
+					<p>
+						Experience authentic Mexican dining! Our kitchen prepares flavorful, traditional meals daily using fresh, high-quality ingredients from our market.
+					</p>
+				</div>
+			</div>
+		</Grid>
+	</Section>
+
+	<!-- Promotion -->
+	<Section class:list={"brand-bg"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none">
+				<Badge color="secondary" title="$10 Lunch Special" />
+				<h2 slot="heading-title" class="font-black text-brand-secondary h2 !my-4">Chicharrón & Guac Combo</h2>
+				<div slot="heading-content">
+					<p>
+						Get the perfect crunch! Enjoy our crispy, house-made chicharrón paired with fresh, flavorful guacamole for just $10. Grab this authentic deal today!
+					</p>
+
+					<span class="text-brand-secondary font-medium">
+						✔ We also do take-away, so you can enjoy your food at home
+					</span>
+
+					<div class="mt-8">
+						<Button color="secondary" url="/book">Book a table</Button>
+					</div>
+				</div>
+			</div>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto mercado-image-blob"}
+					src={Promotion}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+	<!-- Reviews -->
+	<Section class:list={"bg-brand-secondary/30 relative"}>
+		<div class="py-16">
+			<Hero>
+				<div slot="hero-content-left" class="prose max-w-none order-2">
+					<div class="text-center not-prose">
+						<Badge color="white" title="What Customers Say" />
+					</div>
+					<h2 slot="heading-title" class="font-black h4 text-center mt-0 mb-4">Loved by the Auburn Community</h2>
+					<div slot="heading-content">
+						<p class="text-center">
+							Hear from our neighbors about why they love shopping, dining, and supporting El Mercado Latino.
+						</p>
+
+						<ReviewSlider />
+					</div>
+				</div>
+
+				<div slot="hero-content-right">
+					<Picture height={400} src={reviewAuthors} alt="Review authors">
+				</div>
+			</Hero>
+		</div>
+
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 1440 320"
+			class="absolute h-40 w-full top-0 inset-x-0 rotate-180 fill-brand-bg"
+			preserveAspectRatio="none"
+			><path
+				fill-opacity="1"
+				d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+			></path>
+		</svg>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 1440 320"
+			class="absolute h-40 w-full bottom-0 inset-x-0 fill-brand-bg"
+			preserveAspectRatio="none"
+			><path
+				fill-opacity="1"
+				d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+			></path>
+		</svg>
+	</Section>
+
+	<!-- About -->
+	<Section class:list={"brand-bg"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose lg:order-2">
+				<h2 class="font-black">Rooted in Auburn Since Day One</h2>
+
+				<p>
+					For years, our grocery store has been more than just a place to buy food—it has been a gathering place for the Auburn community. Family-owned and operated, we started with a simple mission: to provide our neighbors with access to fresh, wholesome, and affordable food while supporting local Washington farmers and vendors.
+				</p>
+
+				<p>
+				We believe that grocery shopping shouldn't feel like a chore, which is why we pride ourselves on our clean aisles, vibrant displays, and exceptionally friendly service. Whether you are prepping for a family barbecue or just grabbing a quick lunch, we are always happy to welcome you home.
+				</p>
+
+				<div class="mt-8">
+					<Button color = "secondary" url="/menu">
+						
+						Get Directions
+					</Button>
+				</div>
+			</div>
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto mercado-image-blob"}
+					src={About}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+	<!-- Map -->
+	<iframe width="100%" height="600px" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=mercadolatinoauburn&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"></iframe>	
+</Layout>

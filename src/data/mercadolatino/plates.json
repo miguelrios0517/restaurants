@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "slug": "antojitos-y-entradas",
+    "prettyName": "Antojitos & Entradas",
+    "description": "Start your meal with our delicious Mexican starters and sides.",
+    "plates": [
+      {
+        "name": "Taquitos Dorados (8pc)",
+        "description": "Crispy rolled corn tortillas filled with shredded chicken or beef, served with crema and house salsa.",
+        "price": 11.99
+      },
+      {
+        "name": "Tamales Caseros (2pc)",
+        "description": "Handmade corn masa tamales packed with seasoned shredded pork and salsa verde, steamed in corn husks.",
+        "price": 12.99
+      },
+      {
+        "name": "Chiles Guerreros (8pc)",
+        "description": "Crispy jalapeno poppers stuffed with a rich, creamy blend of melted Chihuahua cheese.",
+        "price": 11.95
+      },
+      {
+        "name": "Camarones Fritos",
+        "description": "Lightly battered, crispy golden fried prawns served with a spicy chipotle dipping sauce.",
+        "price": 12.99
+      },
+      {
+        "name": "Elote Asado",
+        "description": "Steamed street corn off the cob, lightly tossed with cotija cheese, fresh lime, chili powder, and crema.",
+        "price": 6.0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "caldos-y-ensaladas",
+    "prettyName": "Caldos & Ensaladas",
+    "description": "Fresh green salads and classic comforting traditional broths.",
+    "plates": [
+      {
+        "name": "Ensalada de Pollo Asado",
+        "description": "Fresh mixed greens topped with our signature grilled char-broiled achiote chicken breast.",
+        "price": 11.0
+      },
+      {
+        "name": "Ensalada de Nopales",
+        "description": "Traditional sweet and savory marinated tender cactus salad with tomatoes, onions, cilantro, and queso fresco.",
+        "price": 9.0
+      },
+      {
+        "name": "Consome de Pollo",
+        "description": "Traditional Mexican soup made with rich seasoned chicken broth, shredded chicken, and rice.",
+        "price": 4.0
+      },
+      {
+        "name": "Caldo de Res",
+        "description": "Tangy and spicy beef broth loaded with tender beef chunks, corn on the cob, carrots, and squash.",
+        "price": 12.99
+      },
+      {
+        "name": "Sopa de Tortilla",
+        "description": "Delicate savory tomato broth floating with crispy tortilla strips, avocado slices, and queso fresco.",
+        "price": 13.99
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "platos-fuertes-clasicos",
+    "prettyName": "Platos Fuertes Clasicos",
+    "description": "Char-broiled meats glazed in savory house marinades, served with rice, beans, and salad.",
+    "plates": [
+      {
+        "name": "Pollo Asado",
+        "description": "Juicy, char-broiled chicken thigh meat tossed in our citrusy house achiote marinade.",
+        "price": 20.99
+      },
+      {
+        "name": "Pollo a la Diabla",
+        "description": "Grilled chicken breast or thigh glazed in our signature spicy chipotle and habanero red sauce.",
+        "price": 22.99
+      },
+      {
+        "name": "Carne Asada",
+        "description": "Tender, thinly sliced marinated flank steak grilled to perfection over an open flame.",
+        "price": 23.99
+      },
+      {
+        "name": "Milanesa de Pollo",
+        "description": "Crispy seasoned breaded deep-fried chicken cutlet served with a side of fresh lime and pico de gallo.",
+        "price": 21.99
+      },
+      {
+        "name": "Salmon al Mojo de Ajo",
+        "description": "Perfectly grilled salmon fillet brushed with our zesty garlic-butter and citrus sauce reduction.",
+        "price": 24.99
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "combinaciones-y-molcajetes",
+    "prettyName": "Combinaciones & Molcajetes",
+    "description": "Why choose? Get a combination of your favorites served together on a sizzling platter.",
+    "plates": [
+      {
+        "name": "Combo de Pollo y Taquitos",
+        "description": "Our classic pollo asado paired with crispy chicken taquitos dorados, rice, beans, and salad.",
+        "price": 21.99
+      },
+      {
+        "name": "Combo de Pollo y Carne Asada",
+        "description": "A robust pairing of grilled citrus chicken breast and tender marinated grilled carne asada.",
+        "price": 25.99
+      },
+      {
+        "name": "Pollo Asado y Arroz Especial",
+        "description": "Generous portion of pollo asado served alongside a mountain of savory Mexican rice and signature beans.",
+        "price": 21.95
+      },
+      {
+        "name": "Molcajete Mixto Deluxe",
+        "description": "Grilled chicken, carne asada, grilled cactus, panela cheese, longaniza sausage, rice, beans, and tortillas.",
+        "price": 24.99
+      },
+      {
+        "name": "Paquete Familiar (Para 2)",
+        "description": "Pollo asado, bistec encebollado, carnitas estilo Michoacán, 10 pcs taquitos dorados, large rice, large beans, and salad.",
+        "price": 85.99
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "especialidades-de-la-parrilla",
+    "prettyName": "Especialidades de la Parrilla",
+    "description": "High-heat flamed house classics packed with deep, rich, authentic spices.",
+    "plates": [
+      {
+        "name": "Bistec Encebollado",
+        "description": "Tender sliced steak stir-fried with green onions, white onions, and jalapenos in a savory maggi sauce.",
+        "price": 23.99
+      },
+      {
+        "name": "Pollo en Mole Poblano",
+        "description": "Tender chicken chunks tossed in a sweet, savory, and mildly spicy traditional chocolate-chili sauce.",
+        "price": 20.99
+      },
+      {
+        "name": "Carnitas en Salsa Verde",
+        "description": "Slow-braised tender pork chunks simmered in a classic vibrant, tangy tomatillo and jalapeno sauce.",
+        "price": 20.99
+      },
+      {
+        "name": "Pollo con Crema y Chipotle",
+        "description": "Tender chicken breast glazed in a smooth, creamy smoky honey chipotle sauce, dusted with cilantro.",
+        "price": 20.99
+      },
+      {
+        "name": "Alambre de Res con Queso",
+        "description": "Slices of tender flank steak wok-fried with crisp bell peppers, onions, bacon, and melted Oaxaca cheese.",
+        "price": 23.99
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "arroz-y-frijoles-preparados",
+    "prettyName": "Arroz & Frijoles Preparados",
+    "description": "Hearty traditional seasoned rice bowls and savory authentic bean favorites.",
+    "plates": [
+      {
+        "name": "Arroz con Pollo Asado",
+        "description": "Fluffy seasoned Mexican rice tossed with mixed peppers, corn, and loaded with grilled chicken strips.",
+        "price": 20.99
+      },
+      {
+        "name": "Arroz Especial del Chef",
+        "description": "Sizzling rice platter loaded with a hearty blend of shrimp, carne asada, chicken, and melted cheese.",
+        "price": 25.99
+      },
+      {
+        "name": "Arroz con Pollo Clasico",
+        "description": "Classic comforting Mexican rice tossed with tomato base, peas, carrots, onions, and shredded chicken.",
+        "price": 20.99
+      },
+      {
+        "name": "Frijoles Charros Especiales",
+        "description": "Thick pinto bean stew slow-simmered in bacon broth, loaded with chorizo, ham, franks, and fresh chiles.",
+        "price": 14.95
+      },
+      {
+        "name": "Chilaquiles Verdes o Rojos",
+        "description": "Spicy, savory fried tortilla chips simmered in house salsa verde or roja, topped with crema and queso fresco.",
+        "price": 14.95
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "tacos-y-quesadillas",
+    "prettyName": "Tacos & Quesadillas",
+    "description": "Freshly prepared classic street tacos and large special house quesadillas.",
+    "plates": [
+      {
+        "name": "Tacos de la Calle (Orden)",
+        "description": "Classic street tacos filled with your choice of meat, diced onions, cilantro, and lime wedges.",
+        "price": 13.99
+      },
+      {
+        "name": "Quesadilla Suprema",
+        "description": "Large flour tortilla filled with meat and Chihuahua cheese, folded and grilled, topped with sour cream, guac, and pico.",
+        "price": 18.95
+      },
+      {
+        "name": "Tacos de Pescado Baja",
+        "description": "An assortment of fresh beer-battered fish draped neatly over corn tortillas with cabbage and chipotle mayo.",
+        "price": 18.95
+      },
+      {
+        "name": "Gringa de Pastor",
+        "description": "Marinated pork pastor, melted Monterey cheese, avocado, and pineapple slices between two grilled flour tortillas.",
+        "price": 19.95
+      },
+      {
+        "name": "Tacos de Birria con Consome",
+        "description": "Slow-stewed beef birria tacos with melted cheese, onions, cilantro, served with a rich side broth for dipping.",
+        "price": 18.95
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "bebidas",
+    "prettyName": "Bebidas",
+    "description": "Refresh yourself with our selection of traditional Mexican drinks.",
+    "plates": [
+      {
+        "name": "Agua Fresca de Horchata",
+        "description": "Sweet, creamy, and chilled traditional house-brewed cinnamon rice milk beverage.",
+        "price": 6.0
+      },
+      {
+        "name": "Agua Fresca de Jamaica",
+        "description": "Boldly brewed hibiscus flower tea, sweetened and served ice cold on a hot day.",
+        "price": 6.0
+      },
+      {
+        "name": "Refrescos Mexicanos",
+        "description": "Your choice of classic ice-cold refreshing glass bottled sodas (Jarritos, Mexican Coke).",
+        "price": 3.0
+      },
+      {
+        "name": "Jugo de Manzana",
+        "description": "Sweet and crisp real apple juice.",
+        "price": 4.0
+      },
+      {
+        "name": "Agua Embotellada",
+        "description": "Chilled pure drinking water.",
+        "price": 3.0
+      }
+    ]
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "slug": "appetizers",
+    "prettyName": "Appetizers",
+    "description": "Start your meal with our delicious starters and sides.",
+    "plates": [
+      {
+        "name": "Gyoza (8pc)",
+        "description": "Pan-fried pork dumplings served with a savory dipping sauce.",
+        "price": 11.99
+      },
+      {
+        "name": "Egg Rolls (2pc)",
+        "description": "Crispy golden egg rolls packed with minced pork and fresh vegetables.",
+        "price": 12.99
+      },
+      {
+        "name": "Crab Rangoon (8pc)",
+        "description": "Crispy wonton wrappers stuffed with a creamy crab meat blend.",
+        "price": 11.95
+      },
+      {
+        "name": "Deep Fried Prawns",
+        "description": "Lightly battered, crispy golden fried prawns served with dipping sauce.",
+        "price": 12.99
+      },
+      {
+        "name": "Edamame",
+        "description": "Steamed soybeans lightly sprinkled with sea salt.",
+        "price": 6.0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "salads-and-soups",
+    "prettyName": "Salads & Soups",
+    "description": "Fresh green salads and classic comforting broths.",
+    "plates": [
+      {
+        "name": "Chicken Teriyaki Salad",
+        "description": "Fresh mixed greens topped with our signature grilled char-broiled chicken.",
+        "price": 11.0
+      },
+      {
+        "name": "Seaweed Salad",
+        "description": "Traditional sweet and savory marinated green seaweed.",
+        "price": 9.0
+      },
+      {
+        "name": "Miso Soup",
+        "description": "Traditional Japanese soup made with rich dashi broth and miso paste.",
+        "price": 4.0
+      },
+      {
+        "name": "Hot & Sour Soup",
+        "description": "Tangy and spicy broth loaded with tofu, mushrooms, and bamboo shoots.",
+        "price": 12.99
+      },
+      {
+        "name": "Wonton Soup",
+        "description": "Delicate savory dumplings floating in a clear, soothing house broth.",
+        "price": 13.99
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "teriyaki-classics",
+    "prettyName": "Teriyaki Classics",
+    "description": "Char-broiled meats glazed in sweet teriyaki sauce, served with rice and salad.",
+    "plates": [
+      {
+        "name": "Chicken Teriyaki",
+        "description": "Juicy, char-broiled chicken thigh meat tossed in our sweet house teriyaki sauce.",
+        "price": 20.99
+      },
+      {
+        "name": "Spicy Chicken Teriyaki",
+        "description": "Grilled chicken breast or thigh glazed in our signature spicy teriyaki glaze.",
+        "price": 22.99
+      },
+      {
+        "name": "Beef Teriyaki",
+        "description": "Tender, thinly sliced marinated beef grilled to perfection.",
+        "price": 23.99
+      },
+      {
+        "name": "Chicken Katsu",
+        "description": "Crispy panko-breaded deep-fried chicken cutlet served with tangy katsu sauce.",
+        "price": 21.99
+      },
+      {
+        "name": "Salmon Teriyaki",
+        "description": "Perfectly grilled salmon fillet brushed with our sweet house teriyaki reduction.",
+        "price": 24.99
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "combos-and-bentos",
+    "prettyName": "Combos & Bento Boxes",
+    "description": "Why choose? Get a combination of your favorites served together.",
+    "plates": [
+      {
+        "name": "Chicken & Gyoza Combo",
+        "description": "Our classic chicken teriyaki paired with crispy pork gyoza, rice, and salad.",
+        "price": 21.99
+      },
+      {
+        "name": "Chicken & Beef Combo",
+        "description": "A robust pairing of grilled chicken teriyaki and tender marinated beef.",
+        "price": 25.99
+      },
+      {
+        "name": "Chicken Teriyaki & Yakisoba Special",
+        "description": "Generous portion of chicken teriyaki served alongside wok-tossed noodles.",
+        "price": 21.95
+      },
+      {
+        "name": "Deluxe Bento Box",
+        "description": "Teriyaki chicken, California roll, prawn tempura, gyoza, rice, and salad.",
+        "price": 24.99
+      },
+      {
+        "name": "Family Combo (For 2)",
+        "description": "Teriyaki chicken, Mongolian beef, sweet and sour chicken, 10 pcs gyoza, chicken fried rice, rice, and salad.",
+        "price": 85.99
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "wok-specials",
+    "prettyName": "Wok Specials",
+    "description": "High-heat stir-fried house classics packed with savory flavors.",
+    "plates": [
+      {
+        "name": "Mongolian Beef",
+        "description": "Tender beef stir-fried with green onions and white onions in a savory brown sauce.",
+        "price": 23.99
+      },
+      {
+        "name": "General Tso's Chicken",
+        "description": "Crispy chicken chunks tossed in a sweet, savory, and mildly spicy red sauce.",
+        "price": 20.99
+      },
+      {
+        "name": "Sweet & Sour Chicken",
+        "description": "Deep-fried golden chicken bites served with a classic vibrant sweet and sour sauce.",
+        "price": 20.99
+      },
+      {
+        "name": "Honey Sesame Chicken",
+        "description": "Crispy chicken glaze in a sweet honey sauce, dusted with toasted sesame seeds.",
+        "price": 20.99
+      },
+      {
+        "name": "Broccoli Beef",
+        "description": "Slices of tender flank steak wok-fried with fresh crisp broccoli florets.",
+        "price": 23.99
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "noodles-and-rice",
+    "prettyName": "Noodles & Fried Rice",
+    "description": "Hearty pan-fried noodles and savory rice favorites.",
+    "plates": [
+      {
+        "name": "Chicken Yakisoba",
+        "description": "Stir-fried Japanese thin noodles with mix vegetables and grilled chicken.",
+        "price": 20.99
+      },
+      {
+        "name": "Combo Fried Rice",
+        "description": "Wok-fried rice loaded with a hearty blend of shrimp, beef, and chicken.",
+        "price": 25.99
+      },
+      {
+        "name": "Chicken Fried Rice",
+        "description": "Classic comforting fried rice tossed with egg, peas, carrots, and savory chicken.",
+        "price": 20.99
+      },
+      {
+        "name": "Tempura Udon",
+        "description": "Thick wheat noodle soup in light dashi broth, served with a side of crispy shrimp tempura.",
+        "price": 14.95
+      },
+      {
+        "name": "Kimchi Fried Rice",
+        "description": "Spicy, savory fried rice kicked up with zesty fermented house kimchi.",
+        "price": 14.95
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "sushi-rolls",
+    "prettyName": "Sushi Rolls",
+    "description": "Freshly prepared classic and special house sushi rolls.",
+    "plates": [
+      {
+        "name": "California Roll",
+        "description": "Classic roll filled with crab meat, creamy avocado, and crisp cucumber.",
+        "price": 13.99
+      },
+      {
+        "name": "Drunken Tiger Roll",
+        "description": "Shrimp tempura and cream cheese roll deep fried, topped with spicy crab, eel sauce, and spicy mayo.",
+        "price": 18.95
+      },
+      {
+        "name": "Rainbow Roll",
+        "description": "An assortment of fresh raw fish draped neatly over a base California roll.",
+        "price": 18.95
+      },
+      {
+        "name": "Philadelphia Roll",
+        "description": "Spicy tuna, cream cheese, avocado, and cucumber topped with rich salmon slices.",
+        "price": 19.95
+      },
+      {
+        "name": "Spider Roll",
+        "description": "Deep-fried soft shell crab, crab meat, avocado, cucumber, and masago with eel sauce.",
+        "price": 18.95
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "beverages",
+    "prettyName": "Beverages",
+    "description": "Refresh yourself with our selection of drinks.",
+    "plates": [
+      {
+        "name": "Thai Iced Tea",
+        "description": "Sweet, creamy, and chilled traditional brewed orange Thai tea.",
+        "price": 6.0
+      },
+      {
+        "name": "Thai Iced Coffee",
+        "description": "Boldly brewed coffee sweetened with condensed milk and served over ice.",
+        "price": 6.0
+      },
+      {
+        "name": "Canned Soda",
+        "description": "Your choice of classic ice-cold refreshing soft drinks.",
+        "price": 3.0
+      },
+      {
+        "name": "Apple Juice",
+        "description": "Sweet and crisp sweet apple juice.",
+        "price": 4.0
+      },
+      {
+        "name": "Bottled Water",
+        "description": "Chilled pure drinking water.",
+        "price": 3.0
+      }
+    ]
+  }
+]

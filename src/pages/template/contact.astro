@@ -1,0 +1,20 @@
+---
+import Layout from "~/layouts/template/Layout.astro";
+import Section from "~/components/Section.astro";
+import Heading from "~/components/Heading.astro";
+import FormContact from "~/components/forms/FormContact.astro";
+import Button from "~/components/Button.astro";
+import ButtonCallUs from "~/components/template/ButtonCallUs.astro";
+---
+
+<Layout>
+	<Section>
+		<Heading>
+			<h2 slot="heading-title" class="font-black text-brand-secondary h2">Contact</h2>
+			<p slot="heading-content">Get in touch with us for any questions or inquiries.</p>
+		</Heading>
+
+        <FormContact />
+		
+	</Section>
+</Layout>

@@ -1,0 +1,80 @@
+---
+import Layout from "~/layouts/gingerteriyaki/Layout.astro";
+import Section from "~/components/Section.astro";
+import Hero from "~/components/Hero.astro";
+import { Picture } from "astro:assets";
+import Badge from "~/components/Badge.astro";
+import Button from "~/components/Button.astro";
+import ButtonCallUs from "~/components/gingerteriyaki/ButtonCallUs.astro";
+import Article from "~/components/Article.astro";
+
+// Images
+import PizzaHero from "~/assets/images/gingerteriyaki/pizza-hero.png";
+import Teriyaki from "~/assets/images/gingerteriyaki/teriyaki2.jpeg";
+
+---
+
+<Layout dataTheme="ginger-teriyaki">
+	<Section hero=true class:list={"brand-bg"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
+				<Badge color="primary" title="Ginger Teriyaki in Auburn, WA" />
+				<h1 class="font-black">Sizzling Auburn Favorites Since Day One</h1>
+
+				<p>
+					Ginger Teriyaki brings the fire, flavor, and fresh ingredients straight to your plate. Located in the heart of Auburn, Washington, our kitchen specializes in perfectly charred meats, crisp veggies, and signature house-made sauces crafted to satisfy your cravings.
+				</p>
+
+				<span class="text-brand-primary font-medium">✔ Cater Your Next Event</span>
+
+				<div class="mt-8 flex items-center gap-x-8">
+					<Button url="/book">Get Directions</Button>
+					<ButtonCallUs />
+				</div>
+			</div>
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto image-blob"}
+					src={Teriyaki}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+					loading={"eager"}
+					fetchpriority={"high"}
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+	<Section class:list={'brand-bg'}>
+		<Article>
+			<h2>The Ginger Journey</h2>
+			<p>
+				Founded in <strong>2002</strong>, What started as a simple passion for perfect marinades has grown into Auburn’s go-to spot for authentic, high-heat grilling. At <strong>Ginger Teriyaki</strong>, we spent years perfecting our signature sweet-and-savory glaze to deliver ultimate PNW comfort in every bite.
+			</p>
+
+			<h3>Rated 4.5 Stars on Google</h3>
+			<p>
+				With a 4.5-star rating on Google, our community has made us Auburn's top choice for comfort food. See why hundreds of local families trust Ginger Teriyaki for fresh, fire-kissed meals daily.
+			</p>
+
+			<h3>Rooted in Washington</h3>
+			<blockquote>"Family Owned Restaurant Deidcated to Our Local Community"</blockquote>
+			<p>
+				Pacific Northwest teriyaki is a culture of its own, and Ginger Teriyaki is proud to keep that rich tradition alive in Auburn. We love feeding our hard-working community, supporting local families, and being the comforting meal you can always depend on.
+			</p>
+
+			<h4>What Makes Us Special?</h4>
+			<ul>
+				<li><strong>24 Years of Flavor:</strong> Fire-kissed char and perfected glaze since 2002.</li>
+				<li><strong>Always Made Fresh:</strong> Fired up on a roaring grill only when you order.</li>
+				<li><strong>True PNW Tradition:</strong> Generous portions rooted deep in Auburn's culture.</li>
+			</ul>
+
+			<h3>Visit Ginger Teriyaki Today</h3>
+			<p>
+				Whether you are grabbing a quick lunch, picking up dinner for the family, or dining in with friends, we treat you like family. Swing by today and see why Auburn can't get enough of our grill!
+			</p>
+		</Article>
+	</Section>
+</Layout>

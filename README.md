@@ -8,11 +8,11 @@ AstroPie is perfect for restaurant owners, developers, and designers who want to
 
 ## 🛠️ Technologies Used
 
--   **Astro**: The core framework for building fast, content-focused websites.
--   **TailwindCSS**: A utility-first CSS framework for rapid UI development.
--   **Alpine.js**: A lightweight JavaScript framework for adding interactivity.
--   **Swiper**: A modern slider library for creating responsive sliders.
--   **GLightbox**: A pure JavaScript lightbox for displaying images and videos.
+- **Astro**: The core framework for building fast, content-focused websites.
+- **TailwindCSS**: A utility-first CSS framework for rapid UI development.
+- **Alpine.js**: A lightweight JavaScript framework for adding interactivity.
+- **Swiper**: A modern slider library for creating responsive sliders.
+- **GLightbox**: A pure JavaScript lightbox for displaying images and videos.
 
 ## 🚀 Installation and Deployment
 
@@ -20,27 +20,27 @@ To get started with AstroPie, follow these steps:
 
 1. **Clone AstroPie**:
 
-    ```sh
-    git clone https://github.com/wpinfusion/AstroPie.git
-    ```
+   ```sh
+   git clone https://github.com/wpinfusion/AstroPie.git
+   ```
 
 2. **Install Dependencies**:
 
-    ```sh
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 
 3. **Run Development Server**:
 
-    ```sh
-    npm run dev
-    ```
+   ```sh
+   npm run dev
+   ```
 
 4. **Build for Production**:
 
-    ```sh
-    npm run build
-    ```
+   ```sh
+   npm run build
+   ```
 
 ## 📂 Project Structure
 
@@ -68,31 +68,31 @@ Inside of your AstroPie project, you'll see the following folders and files:
 
 ## 📄 Premade Pages
 
--   Home: index.astro
--   About Us: about-us.astro
--   Menu: menu.astro
--   Gallery: gallery.astro
--   Contact: contact.astro
--   Book a Table: book.astro
+- Home: index.astro
+- About Us: about-us.astro
+- Menu: menu.astro
+- Gallery: gallery.astro
+- Contact: contact.astro
+- Book a Table: book.astro
 
 ## 🧩 Available Components
 
--   Article: Article.astro
--   Badge: Badge.astro
--   Button: Button.astro
--   ButtonCallUs: ButtonCallUs.astro
--   Card: Card.astro
--   Footer: Footer.astro
--   FormBook: FormBook.astro
--   FormContact: FormContact.astro
--   Grid: Grid.astro
--   Header: Header.astro
--   Heading: Heading.astro
--   Hero: Hero.astro
--   Menu: Menu.astro
--   ReviewSlider: ReviewSlider.astro
--   Section: Section.astro
--   WideImage: WideImage.astro
+- Article: Article.astro
+- Badge: Badge.astro
+- Button: Button.astro
+- ButtonCallUs: ButtonCallUs.astro
+- Card: Card.astro
+- Footer: Footer.astro
+- FormBook: FormBook.astro
+- FormContact: FormContact.astro
+- Grid: Grid.astro
+- Header: Header.astro
+- Heading: Heading.astro
+- Hero: Hero.astro
+- Menu: Menu.astro
+- ReviewSlider: ReviewSlider.astro
+- Section: Section.astro
+- WideImage: WideImage.astro
 
 ## 📚 Component Documentation
 
@@ -112,7 +112,7 @@ A component for displaying articles.
 A component for displaying badges.
 
 ```astro
-<Badge color="green" title="New" />
+<Badge color="secondary" title="New" />
 ```
 
 ### Button
@@ -120,7 +120,7 @@ A component for displaying badges.
 A component for displaying buttons.
 
 ```astro
-<Button color="green" url="/contact">Contact Us</Button>
+<Button color="secondary" url="/contact">Contact Us</Button>
 ```
 
 ### ButtonCallUs

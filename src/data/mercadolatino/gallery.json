@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Carnicería Counter",
+    "image": "/src/assets/images/mercadolatino/butcher.jpg",
+    "alt": "Authentic Mexican carnicería counter featuring fresh cuts of marinated meats"
+  },
+  {
+    "id": 2,
+    "title": "El Mercado Latino Storefront",
+    "image": "/src/assets/images/mercadolatino/el_mercado_latino_store_cropped.jpg",
+    "alt": "The inviting storefront entrance of El Mercado Latino market"
+  },
+  {
+    "id": 3,
+    "title": "Fresh Meat Selection",
+    "image": "/src/assets/images/mercadolatino/butcher_2.jpg",
+    "alt": "Premium cuts of meat prepared daily by our in-house butcher"
+  },
+  {
+    "id": 4,
+    "title": "Latin Grocery Aisles",
+    "image": "/src/assets/images/mercadolatino/grocery.jpg",
+    "alt": "Well-stocked grocery aisles filled with traditional Mexican spices, salsas, and ingredients"
+  },
+  {
+    "id": 5,
+    "title": "Fresh Produce & Goods",
+    "image": "/src/assets/images/mercadolatino/grocery_2.jpg",
+    "alt": "A wide variety of imported Mexican brands and authentic market products"
+  },
+  {
+    "id": 6,
+    "title": "Panadería Tradicional",
+    "image": "/src/assets/images/mercadolatino/panaderia.jpg",
+    "alt": "Freshly baked Mexican pan dulce, conchas, and bolillos on display"
+  },
+  {
+    "id": 7,
+    "title": "Handcrafted Piñatas",
+    "image": "/src/assets/images/mercadolatino/pinatas_cropped.jpg",
+    "alt": "Brightly colored, festive handmade party piñatas hanging in the market"
+  },
+  {
+    "id": 8,
+    "title": "Authentic Taquería Dining",
+    "image": "/src/assets/images/mercadolatino/restaurant_2_cropped.jpg",
+    "alt": "Delicious freshly prepared Mexican plates served hot from our restaurant kitchen"
+  },
+  {
+    "id": 9,
+    "title": "El Mercado Latino Storefront",
+    "image": "/src/assets/images/mercadolatino/el_mercado_latino_store_cropped.jpg",
+    "alt": "The inviting storefront entrance of El Mercado Latino market"
+  }
+]

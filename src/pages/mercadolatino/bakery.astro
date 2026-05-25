@@ -1,0 +1,80 @@
+---
+import Layout from "~/layouts/mercadolatino/Layout.astro";
+import Section from "~/components/Section.astro";
+import Hero from "~/components/Hero.astro";
+import { Picture } from "astro:assets";
+import Badge from "~/components/Badge.astro";
+import Button from "~/components/Button.astro";
+import ButtonCallUs from "~/components/mercadolatino/ButtonCallUs.astro";
+import Article from "~/components/Article.astro";
+
+// Images
+import PizzaHero from "~/assets/images/mercadolatino/grocery.jpg";
+import AboutHero from "~/assets/images/mercadolatino/panaderia.jpg";
+
+---
+
+<Layout dataTheme="mercado-latino">
+	<Section hero=true class:list={"brand-bg"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
+				<Badge color="primary" title="El Mercado Latino in Auburn, WA" />
+				<h1 class="font-black">Fresh Pan Dulce Baked Daily in Auburn</h1>
+
+				<p>
+					Step into our bakery and follow the warm aroma of authentic, scratch-made Mexican sweet bread. Every morning, our bakers craft traditional favorites using time-tested family recipes, bringing a true taste of heritage straight to our Auburn neighbors.
+				</p>
+
+				<span class="text-brand-primary font-medium">✔ Delicious Mexican Sweet Breads Baked Fresh</span>
+
+				<div class="mt-8 flex items-center gap-x-8">
+					<Button url="/book">Get Directions</Button>
+					<ButtonCallUs />
+				</div>
+			</div>
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto image-blob"}
+					src={AboutHero}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+					loading={"eager"}
+					fetchpriority={"high"}
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+	<Section class:list={'brand-bg'}>
+		<Article>
+			<h2>Scratch-Made Pastries</h2>
+			<p>
+				From perfectly soft <strong>conchas</strong> and <strong>crispy orejas</strong> to <strong>rich empanadas</strong>, our display cases are packed with daily-baked goodness. Pair your favorite traditional pastry with a hot cup of coffee for the absolute perfect start to your morning routine.
+			</p>
+
+			<h3>Custom Celebration Cakes</h3>
+			<p>
+				We closely partner with trusted local farmers to provide you with sustainably raised, high-quality meats. Taste the exceptional difference that genuine freshness brings to your table.Planning a birthday or family gathering? Let our bakery team design a beautiful, custom tres leches cake that your guests will absolutely love. Order ahead for your next big party.
+			</p>
+
+			<h3>Daily Baking Routine</h3>
+			<blockquote>"Baked fresh daily before sunrise."</blockquote>
+			<p>
+				We start long before sunrise every single day to ensure that our shelves are packed with warm, golden, and delicious breads the moment our doors open. We use only premium ingredients and classic techniques, ensuring every single bite delivers the authentic texture and comforting flavor your family deserves.
+			</p>
+
+			<h4>What Makes Us Special?</h4>
+			<ul>
+				<li><strong>Authentic & Fresh:</strong> Premium meats, hot meals, and fresh bakery.</li>
+				<li><strong>All-in-One Stop:</strong> Grab groceries and a hot lunch in one visit.</li>
+				<li><strong>Local & Family-Owned:</strong> Proudly serving Auburn with friendly service.</li>
+			</ul>
+
+			<h3>Grab a Sweet Treat Today</h3>
+			<p>
+				Stop by El Mercado Latino today to explore our bakery case. Treat yourself and your family to the finest, freshest authentic Mexican pastries in town. We cannot wait to welcome you in.
+			</p>
+		</Article>
+	</Section>
+</Layout>

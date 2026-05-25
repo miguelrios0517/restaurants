@@ -1,0 +1,82 @@
+---
+import "~/styles/global.css";
+import { ClientRouter } from "astro:transitions";
+import Header from "~/components/mercadolatino/Header.astro";
+import Footer from "~/components/mercadolatino/Footer.astro";
+const { pageTitle, title, description, dataTheme="template"} = Astro.props;
+const baseUrl = `${Astro.url.protocol}//${Astro.url.host}`;
+import { siteLang, themeColor } from "~/data/mercadolatino/config";
+---
+
+<!doctype html>
+<html lang={siteLang} data-theme={dataTheme}>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content={themeColor} />
+		<meta name="description" content={description} />
+		<meta name="robots" content="index,follow" />
+		<meta name="googlebot" content="index,follow" />
+		<link rel="author" href="humans.txt" />
+
+		<!-- <link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/images/mercadolatino/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/images/mercadolatino/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/images/mercadolatino/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="/images/mercadolatino/favicon/safari-pinned-tab.svg"
+			color="#E6F4FF"
+		/> -->
+		<meta name="msapplication-TileColor" content="#ffffff" />
+
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:image" content={`${baseUrl}/images/mercadolatino/og-image.jpg`} />
+		<meta property="og:description" content={description} />
+		<meta property="og:site_name" content="WP Infusion" />
+		<meta property="og:locale" content={siteLang} />
+
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:url" content={Astro.url} />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<!-- <meta name="twitter:image" content={`${baseUrl}/images/mercadolatino/og-image.jpg`} /> -->
+		<title>{pageTitle}</title>
+		<ClientRouter />
+		<script is:inline define:vars={{ dataTheme }}>
+			// 1. Create an isolated function that knows exactly what the theme should be
+			const applyPageTheme = () => {
+				document.documentElement.setAttribute('data-theme', dataTheme);
+			};
+
+			// 2. Apply immediately on the very first cold page load
+			applyPageTheme();
+
+			// 3. Force-reapply the theme state after ClientRouter swaps the pages
+			document.addEventListener('astro:after-swap', applyPageTheme);
+		</script>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

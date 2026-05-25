@@ -1,0 +1,19 @@
+---
+import Layout from "~/layouts/mercadolatino/Layout.astro";
+import Section from "~/components/Section.astro";
+import Heading from "~/components/Heading.astro";
+import MenuList from "~/components/mercadolatino/Menu.astro";
+---
+
+<Layout dataTheme="mercado-latino">
+	<Section pageHero=true>
+		<Heading>
+			<h1 slot="heading-title" class="font-black h2">Our Menu</h1>
+			<p slot="heading-content">
+				Explore our freshly prepared Mexican dishes, made daily with traditional flavors you'll love.
+			</p>
+		</Heading>
+
+		<MenuList />
+	</Section>
+</Layout>
