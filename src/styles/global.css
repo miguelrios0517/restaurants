@@ -2,7 +2,7 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-inter: "Inter", "sans-serif";
+  /* --font-inter: "Inter", "sans-serif"; */
   --color-brand-primary: var(--brand-primary); /*red*/
   --color-brand-secondary: var(--brand-secondary); /*golden*/
   --color-brand-black: var(--brand-black); /*black*/
@@ -146,7 +146,7 @@ body {
 }
 
 body {
-  @apply h-full scroll-smooth font-inter text-brand-black bg-brand-bg;
+  @apply h-full scroll-smooth text-brand-black bg-brand-bg;
 }
 
 h1,
