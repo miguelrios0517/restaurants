@@ -42,14 +42,17 @@ const pathname = rmTrailingSlash(Astro.url.pathname);
 				</button>
 			</div>
 			<Picture
-					class:list={""}
-					src={Logo}
-					height={80}
-					formats={["avif", "webp"]}
-					alt="Ginger Teriyaki Logo"
-					loading={"eager"}
-					fetchpriority={"high"}
-				/>
+				class="h-[80px] w-[90px] object-contain" 
+				src={Logo}
+				width={90}
+				height={80}
+				widths={[90, 180]} 
+				sizes="90px" 
+				formats={["avif", "webp"]}
+				alt="Ginger Teriyaki Logo"
+				loading="eager"
+				fetchpriority="high"
+			/>
 			<div class="hidden lg:flex lg:gap-x-12 lg:items-center ">
 				{
 					menuMain.map((item) => (
