@@ -1,5 +1,5 @@
 ---
-import Layout from "~/layouts/mercadolatino/Layout.astro";
+import Layout from "~/layouts/labonita/Layout.astro";
 import Section from "~/components/Section.astro";
 import Hero from "~/components/Hero.astro";
 import { Picture, Image } from "astro:assets";
@@ -14,44 +14,25 @@ import ReviewSlider from "~/components/mercadolatino/ReviewSlider.astro";
 
 // Images
 import HeroImage from "~/assets/images/mercadolatino/grocery.jpg"
-import FrontStore from "~/assets/images/mercadolatino/el_mercado_latino_store_cropped.jpg";
+import FrontStore from "~/assets/images/labonita/labonita_storefront_cropped.png";
 import Service1 from "~/assets/images/mercadolatino/grocery_2.jpg";
 import Service2 from "~/assets/images/mercadolatino/butcher_2.jpg";
-import Service3 from "~/assets/images/mercadolatino/restaurant_2_cropped.jpg";
+import Service3 from "~/assets/images/labonita/restaurant_cropped.jpg";
 import About from "~/assets/images/mercadolatino/panaderia.jpg";
 import Promotion from "~/assets/images/mercadolatino/chicharon_guac.jpg";
-
-
-
-
-
-import Teriyaki from "~/assets/images/mercadolatino/teriyaki.jpeg";
-import TeriyakiWide from "~/assets/images/mercadolatino/teriyaki_wide.jpeg";
-import Teriyaki2 from "~/assets/images/mercadolatino/teriyaki2.jpeg";
-import Teriyaki3 from "~/assets/images/mercadolatino/teriyaki3.jpeg";
-import FriedRice from "~/assets/images/mercadolatino/friedrice.jpeg";
-import Gyoza from "~/assets/images/mercadolatino/gyoza.jpeg";
-import Katsu from "~/assets/images/mercadolatino/katsu.jpeg";
-
-import PizzaHero from "~/assets/images/mercadolatino/pexels-shvetsa-5953523.jpg";
-import Pizza from "~/assets/images/mercadolatino/pizza.png";
-import Spaghetti from "~/assets/images/mercadolatino/spaghetti.png";
-import Fish from "~/assets/images/mercadolatino/fish.png";
-import DecorativeImage from "~/assets/images/mercadolatino/pexels-shvetsa-5953523.jpg";
 import reviewAuthors from "~/assets/images/template/review-authors.png";
-import Dessert from "~/assets/images/mercadolatino/dessert.png";
-import Mussels from "~/assets/images/mercadolatino/mussels2.png";
+
 ---
 
-<Layout title="Home" pageTitle="Home" description="Welcome to our restaurant!" dataTheme="mercado-latino">
+<Layout title="Home" pageTitle="Home" description="Welcome to our restaurant!">
 	<Section hero=true class:list={"brand-bg"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
-				<Badge color="primary" title="Fresh Grocery and Kitchen" />
-				<h1 class="font-black">Welcome to El Mercado Latino in Auburn, WA</h1>
+				<Badge color="primary" title="Fresh Grocery and Restaurant" />
+				<h1 class="font-black">Welcome to La Bonita Grocery in Auburn, WA</h1>
 
 				<p>
-					Your neighborhood destination for fresh, everyday essentials. Fill your cart with premium hand-cut meats, fresh local produce, and quality ingredients—or skip the cooking entirely with hot, flavorful meals and scratch-made baked goods prepared fresh daily.
+					La Bonita Grocery is your go-to Auburn market and kitchen for authentic flavor. From fresh local produce and premium meats to delicious hot meals and daily-baked pan dulce, we have everything you love. Stop by to shop and dine today!
 				</p>
 
 				<span class="text-brand-black font-medium">✔ Call Ahead for Takeout</span>
@@ -178,7 +159,7 @@ Explore our fresh aisles, custom butcher counter, and authentic kitchen.
 					<h2 slot="heading-title" class="font-black h4 text-center mt-0 mb-4">Loved by the Auburn Community</h2>
 					<div slot="heading-content">
 						<p class="text-center">
-							Hear from our neighbors about why they love shopping, dining, and supporting El Mercado Latino.
+							Hear from our neighbors about why they love shopping, dining, and supporting La Bonita Grocery.
 						</p>
 
 						<ReviewSlider />

@@ -30,6 +30,13 @@
   --brand-bg: #fdfbf7; /* Warm, light background matching ginger-teriyaki vibes */
 }
 
+[data-theme="la-bonita"] {
+  --brand-primary: #c23b80; /* magenta */
+  --brand-secondary: #1b6465; /* teal */
+  --brand-black: #222222; /* charcoal */
+  --brand-bg: #ffffff; /* crisp white background */
+}
+
 @utility container {
   margin-inline: auto;
   padding-inline: 2rem;

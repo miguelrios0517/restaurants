@@ -1,0 +1,35 @@
+---
+import { menuMain } from "~/data/labonita/menus";
+const currentYear = new Date().getFullYear();
+import { siteName } from "~/data/labonita/config";
+import { Picture, Image } from "astro:assets";
+import Logo from "~/assets/images/labonita/labonita_logo.png";
+
+---
+
+<footer class="bg-brand-black text-white">
+	<div class="container pt-16 pb-8">
+		<Picture
+			class="mx-auto h-auto max-w-[207px] w-full" 
+			src={Logo}
+			width={207}
+			height={80}
+			widths={[150, 207, 414]} 
+			sizes="(max-width: 640px) 150px, 207px" 
+			formats={["avif", "webp"]}
+			alt="Ginger Teriyaki Logo"
+			loading="eager"
+			fetchpriority="high"
+		/>
+		<nav class="flex flex-col sm:flex-row items-center justify-center gap-x-12 gap-y-3 font-medium mt-6" aria-label="Footer">
+			{
+				menuMain.map((item) => (
+					<a href={item.url} class="hover:underline">
+						{item.name}
+					</a>
+				))
+			}
+		</nav>
+		<p class="mt-10 text-center text-sm">&copy; {currentYear} {siteName}. All rights reserved. <a class="underline" href="/privacy-policy">Privacy policy</a></p>
+	</div>
+</footer>
