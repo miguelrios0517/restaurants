@@ -2,7 +2,7 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  /* --font-inter: "Inter", "sans-serif"; */
+  --font-inter: "Inter", "sans-serif";
   --color-brand-primary: var(--brand-primary); /*red*/
   --color-brand-secondary: var(--brand-secondary); /*golden*/
   --color-brand-black: var(--brand-black); /*black*/
@@ -35,6 +35,14 @@
   --brand-secondary: #1b6465; /* teal */
   --brand-black: #222222; /* charcoal */
   --brand-bg: #ffffff; /* crisp white background */
+}
+
+[data-theme="costa-sur"] {
+  --brand-primary: #ff4500; /* habanero/chili orange from the logo icon & "TAQUERIA" */
+  --brand-secondary: #2f3640; /* deep slate/charcoal from the "COSTA SUR" text */
+  --brand-black: #1e2229; /* roasted agave / rich soft black for deep contrast */
+  --brand-bg: #ffffff; /* crisp white background for a modern canvas */
+  --brand-bg-alt: #f9f6f0; /* crema / warm off-white for menu blocks and cards */
 }
 
 @utility container {
@@ -153,7 +161,7 @@ body {
 }
 
 body {
-  @apply h-full scroll-smooth text-brand-black bg-brand-bg;
+  @apply h-full scroll-smooth font-inter text-brand-black bg-brand-bg;
 }
 
 h1,
@@ -246,6 +254,103 @@ label {
 /* Swiper */
 .swiper-pagination-bullet-active.swiper-pagination-bullet-active {
   @apply bg-brand-primary;
+}
+
+/* inter-300 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/inter/inter-v18-latin-300.woff2") format("woff2");
+}
+/* inter-300italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 300;
+  src: url("/fonts/inter/inter-v18-latin-300italic.woff2") format("woff2");
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/inter/inter-v18-latin-regular.woff2") format("woff2");
+}
+/* inter-italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/inter/inter-v18-latin-italic.woff2") format("woff2");
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/inter/inter-v18-latin-500.woff2") format("woff2");
+}
+/* inter-500italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 500;
+  src: url("/fonts/inter/inter-v18-latin-500italic.woff2") format("woff2");
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/inter/inter-v18-latin-600.woff2") format("woff2");
+}
+/* inter-600italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 600;
+  src: url("/fonts/inter/inter-v18-latin-600italic.woff2") format("woff2");
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/inter/inter-v18-latin-700.woff2") format("woff2");
+}
+/* inter-700italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/inter/inter-v18-latin-700italic.woff2") format("woff2");
+}
+/* inter-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/inter/inter-v18-latin-900.woff2") format("woff2");
+}
+/* inter-900italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 900;
+  src: url("/fonts/inter/inter-v18-latin-900italic.woff2") format("woff2");
 }
 
 /* Loader adapts to theme text color */

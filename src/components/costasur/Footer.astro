@@ -1,26 +1,26 @@
 ---
-import { menuMain } from "~/data/gingerteriyaki/menus";
+import { menuMain } from "~/data/costasur/menus";
 const currentYear = new Date().getFullYear();
 import { siteName } from "~/data/gingerteriyaki/config";
 import { Picture, Image } from "astro:assets";
-import Logo from "~/assets/images/gingerteriyaki/gingerteriyaki_logo.png";
+import Logo from "~/assets/images/costasur/costasur_logo.png";
 
 ---
 
 <footer class="bg-brand-black text-white">
 	<div class="container pt-16 pb-8">
 		<Picture
-				class="mx-auto h-[80px] w-[90px] object-contain" 
+				class="mx-auto h-[100px] w-[147px] object-contain" 
 				src={Logo}
-				width={90}
-				height={80}
-				widths={[90, 180]} 
-				sizes="90px" 
+				width={147}
+				height={100}
+				widths={[147, 294]} 
+				sizes="147px" 
 				formats={["avif", "webp"]}
-				alt="Ginger Teriyaki Logo"
+				alt="Costa Sur Taqueria Logo"
 				loading="eager"
 				fetchpriority="high"
-			/>
+		/>
 		<nav class="flex flex-col sm:flex-row items-center justify-center gap-x-12 gap-y-3 font-medium mt-6" aria-label="Footer">
 			{
 				menuMain.map((item) => (
