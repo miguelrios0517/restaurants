@@ -4,7 +4,7 @@ export const siteCurrency = "USD";
 export const siteDomain = "astropie.com";
 export const siteName = "AstroPie";
 export const siteSlogan = "The best pies in the galaxy!";
-export const themeColor = "#ff551a";
+export const themeColor = "#FF3C00";
 
 export const phone = {
   href: "tel:+123456789",
