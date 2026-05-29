@@ -2,47 +2,66 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-inter: "Inter", "sans-serif";
   --color-brand-primary: var(--brand-primary); /*red*/
   --color-brand-secondary: var(--brand-secondary); /*golden*/
   --color-brand-black: var(--brand-black); /*black*/
   --color-brand-bg: var(--brand-bg); /* Added background color variable */
+
+  /* Bind Tailwind's structural font utilities to dynamic theme variables */
+  --font-heading: var(--theme-font-heading);
+  --font-body: var(--theme-font-body);
 }
 
 [data-theme="template"] {
   --brand-primary: #db1d00; /*red*/
   --brand-secondary: #157f71; /*golden*/
   --brand-black: var(--color-gray-700); /*black*/
-  --brand-bg: #ffffff; /* Default white background for template theme */
+  --brand-bg: #ffffff;
+
+  --theme-font-heading: system-ui, sans-serif;
+  --theme-font-body: "Inter", "sans-serif";
 }
 
 [data-theme="ginger-teriyaki"] {
   --brand-primary: #b71c1c; /*red*/
   --brand-secondary: #f5bf42; /*golden*/
   --brand-black: #1a1a1a; /*black*/
-  --brand-bg: #fdfbf7; /* Warm, light background matching ginger-teriyaki vibes */
+  --brand-bg: #fdfbf7;
+
+  --theme-font-heading: system-ui, sans-serif;
+  --theme-font-body: "Inter", "sans-serif";
 }
 
 [data-theme="mercado-latino"] {
   --brand-primary: #a61f24; /*red*/
   --brand-secondary: #145a32; /*golden*/
   --brand-black: #2c302e; /*black*/
-  --brand-bg: #fdfbf7; /* Warm, light background matching ginger-teriyaki vibes */
+  --brand-bg: #fdfbf7;
+
+  --theme-font-heading: system-ui, sans-serif;
+  --theme-font-body: "Inter", "sans-serif";
 }
 
 [data-theme="la-bonita"] {
   --brand-primary: #c23b80; /* magenta */
   --brand-secondary: #1b6465; /* teal */
   --brand-black: #222222; /* charcoal */
-  --brand-bg: #ffffff; /* crisp white background */
+  --brand-bg: #ffffff;
+
+  --theme-font-heading: system-ui, sans-serif;
+  --theme-font-body: "Inter", "sans-serif";
 }
 
 [data-theme="costa-sur"] {
-  --brand-primary: #ff4500; /* habanero/chili orange from the logo icon & "TAQUERIA" */
+  --brand-primary: #ff551a; /* habanero/chili orange from the logo icon & "TAQUERIA" */
   --brand-secondary: #2f3640; /* deep slate/charcoal from the "COSTA SUR" text */
-  --brand-black: #1e2229; /* roasted agave / rich soft black for deep contrast */
-  --brand-bg: #ffffff; /* crisp white background for a modern canvas */
-  --brand-bg-alt: #f9f6f0; /* crema / warm off-white for menu blocks and cards */
+  --brand-black: #2f3640; /* roasted agave / rich soft black for deep contrast */
+  --brand-bg: #fdfbf7; /* crisp white background for a modern canvas */
+  --brand-alt: #f4efe6; /* crema / warm off-white for menu blocks and cards */
+
+  /* Apply Montserrat variable font for Headings and Inter for Body text */
+  --theme-font-heading: "Montserrat", system-ui, sans-serif;
+  --theme-font-body: "Inter", "sans-serif";
 }
 
 @utility container {
@@ -54,23 +73,18 @@
   h1 {
     font-size: var(--text-5xl);
   }
-
   h2 {
     font-size: var(--text-4xl);
   }
-
   h3 {
     font-size: var(--text-3xl);
   }
-
   h4 {
     font-size: var(--text-2xl);
   }
-
   h5 {
     font-size: var(--text-xl);
   }
-
   h6 {
     font-size: var(--text-lg);
   }
@@ -79,23 +93,18 @@
     h1 {
       font-size: var(--text-6xl);
     }
-
     h2 {
       font-size: var(--text-5xl);
     }
-
     h3 {
       font-size: var(--text-4xl);
     }
-
     h4 {
       font-size: var(--text-3xl);
     }
-
     h5 {
       font-size: var(--text-2xl);
     }
-
     h6 {
       font-size: var(--text-xl);
     }
@@ -104,37 +113,30 @@
   pre {
     background-color: transparent;
   }
-
   p {
     font-size: var(--text-lg);
     line-height: var(--leading-relaxed);
   }
-
   li {
     font-size: var(--text-lg);
     line-height: var(--leading-relaxed);
   }
-
   hr {
     border-color: var(--color-brand-black);
   }
-
   a {
     color: var(--color-brand-black);
     &:hover {
       text-decoration: underline;
     }
   }
-
   strong {
     font-weight: 700;
   }
-
   img {
     width: 100%;
   }
 
-  /* Core typography mapped cleanly to brand colors */
   --tw-prose-body: var(--color-brand-black);
   --tw-prose-headings: var(--color-brand-black);
   --tw-prose-lead: var(--color-brand-black);
@@ -147,8 +149,6 @@
   --tw-prose-captions: var(--color-brand-black);
   --tw-prose-code: var(--color-brand-black);
   --tw-prose-pre-bg: var(--color-brand-black);
-
-  /* Replaced strict grays with subtle opacities of your brand black for pure theme scaling */
   --tw-prose-hr: var(--color-brand-black) / 15%;
   --tw-prose-pre-code: var(--color-brand-black) / 5%;
   --tw-prose-th-borders: var(--color-brand-black) / 25%;
@@ -161,31 +161,34 @@ body {
 }
 
 body {
-  @apply h-full scroll-smooth font-inter text-brand-black bg-brand-bg;
+  @apply h-full scroll-smooth font-body text-brand-black bg-brand-bg;
 }
 
+/* Base Global Headings Configuration */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  @apply font-bold text-balance wrap-break-word;
+  @apply font-heading text-balance wrap-break-word;
 }
 
+/* Display & H1: All Caps, Bold weight matching the main logo lettering */
 h1,
 .h1 {
-  @apply text-5xl lg:text-7xl;
+  @apply font-bold text-5xl lg:text-7xl;
 }
 
+/* Subheadings (H2, H3): Semi-Bold weight, with 0.15em letter-spacing */
 h2,
 .h2 {
-  @apply text-5xl lg:text-6xl;
+  @apply font-semibold text-5xl lg:text-6xl;
 }
 
 h3,
 .h3 {
-  @apply text-4xl lg:text-5xl;
+  @apply font-semibold text-4xl lg:text-5xl;
 }
 
 h4,
@@ -353,6 +356,17 @@ label {
   src: url("/fonts/inter/inter-v18-latin-900italic.woff2") format("woff2");
 }
 
+/* --- Optimized Montserrat Variable Font Block --- */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  /* Handles everything between 100 and 900 dynamically from one file */
+  font-weight: 100 900;
+  src: url("/fonts/montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype-variations");
+}
+
 /* Loader adapts to theme text color */
 .loader {
   width: 1rem;
@@ -395,8 +409,7 @@ label {
   }
 }
 
-/* custom styles */
-
+/* Custom Shape Masks (Blobs) */
 .image-blob {
   object-fit: cover;
   mask-image: url("data:image/svg+xml;utf8,<svg viewBox='15 15 170 170' xmlns='http://www.w3.org/2000/svg'><path fill='black' d='M49,-52.8C65,-44.9,80.7,-30.9,81.6,-15.9C82.4,-0.8,68.5,15.4,58,33.4C47.5,51.5,40.4,71.5,26.4,79.7C12.4,87.8,-8.5,84.2,-28.2,77.2C-48,70.1,-66.6,59.7,-76.4,43.7C-86.1,27.6,-87,6.1,-83,-14.3C-79,-34.6,-70,-53.6,-55.3,-61.8C-40.7,-69.9,-20.3,-67.2,-1.9,-64.9C16.4,-62.5,32.9,-60.7,49,-52.8Z' transform='translate(100 100)'/></svg>");
@@ -435,14 +448,11 @@ label {
 
 .mercado-image-blob {
   object-fit: cover;
-  /* Customized viewBox to 24 19 157 162 to eliminate all edge whitespace */
   mask-image: url("data:image/svg+xml;utf8,<svg viewBox='24 19 157 162' xmlns='http://www.w3.org/2000/svg'><path fill='black' d='M59.6,-46.9C73.9,-29.6,79.8,-5,75.5,18.6C71.2,42.2,56.7,64.9,37.1,72.7C17.4,80.6,-7.3,73.6,-27.1,61.9C-46.8,50.2,-61.4,33.8,-66.1,14.7C-70.8,-4.4,-65.4,-26.2,-52.8,-43.1C-40.1,-60,-20,-72.1,1.3,-73.1C22.7,-74.2,45.3,-64.2,59.6,-46.9Z' transform='translate(100 100)' /></svg>");
   -webkit-mask-image: url("data:image/svg+xml;utf8,<svg viewBox='24 19 157 162' xmlns='http://www.w3.org/2000/svg'><path fill='black' d='M59.6,-46.9C73.9,-29.6,79.8,-5,75.5,18.6C71.2,42.2,56.7,64.9,37.1,72.7C17.4,80.6,-7.3,73.6,-27.1,61.9C-46.8,50.2,-61.4,33.8,-66.1,14.7C-70.8,-4.4,-65.4,-26.2,-52.8,-43.1C-40.1,-60,-20,-72.1,1.3,-73.1C22.7,-74.2,45.3,-64.2,59.6,-46.9Z' transform='translate(100 100)' /></svg>");
-
   mask-size: 100% 100%;
   mask-position: center;
   mask-repeat: no-repeat;
-
   -webkit-mask-size: 100% 100%;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -451,24 +461,20 @@ label {
 .hours h6 {
   padding-bottom: 1rem;
 }
-
 .hours {
   padding-bottom: 2rem;
 }
-
 .hours p {
   padding-bottom: 0.25rem;
 }
-
 .call-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem; /* Spacing between icon and text */
+  gap: 0.5rem;
 }
-
 .btn-phone-icon {
-  width: 1.25rem; /* Explicit width */
-  height: 1.25rem; /* Explicit height to match font scale */
-  flex-shrink: 0; /* Prevents distortion in tight spaces */
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
 }

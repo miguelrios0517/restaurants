@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Costa Sur Storefront",
+    "image": "/src/assets/images/costasur/costasur_storefront_cropped.jpeg",
+    "alt": "The inviting storefront entrance of Costa Sur Taquería under a clear blue sky"
+  },
+  {
+    "id": 2,
+    "title": "Order Counter Gallery",
+    "image": "/src/assets/images/costasur/counter.jpg",
+    "alt": "The main ordering counter inside Costa Sur Taquería"
+  },
+  {
+    "id": 4,
+    "title": "Authentic Birria Tacos",
+    "image": "/src/assets/images/costasur/birria_tacos.jpg",
+    "alt": "Sizzling, dipped birria tacos served hot with a side of rich consommé for dipping"
+  },
+  {
+    "id": 5,
+    "title": "Monster Burrito",
+    "image": "/src/assets/images/costasur/burrito.jpg",
+    "alt": "A large, tightly wrapped Mexican burrito packed with fresh ingredients and grilled meats"
+  },
+  {
+    "id": 6,
+    "title": "Carne Asada Fries",
+    "image": "/src/assets/images/costasur/carne_asada_fries.webp",
+    "alt": "A mountain of crispy French fries loaded with grilled carne asada, melted cheese, and guacamole"
+  },
+  {
+    "id": 7,
+    "title": "Cheesy Quesadilla",
+    "image": "/src/assets/images/costasur/quesadilla.webp",
+    "alt": "A perfectly toasted flour tortilla oozing with melted cheese and savory fillings"
+  },
+  {
+    "id": 8,
+    "title": "Traditional Street Tacos",
+    "image": "/src/assets/images/costasur/tacos.jpg",
+    "alt": "Platter of authentic Mexican street tacos garnished with fresh cilantro, diced onions, and lime wedges"
+  },
+  {
+    "id": 9,
+    "title": "Authentic Torta",
+    "image": "/src/assets/images/costasur/torta.webp",
+    "alt": "A hearty Mexican torta sandwich layered with seasoned meats, avocado, and fresh toppings on telera bread"
+  },
+  {
+    "id": 3,
+    "title": "Dining Area View",
+    "image": "/src/assets/images/costasur/counter_wide.jpg",
+    "alt": "A wide view of the welcoming interior counter and dining space"
+  }
+]

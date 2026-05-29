@@ -13,13 +13,13 @@ import WideImage from "~/components/WideImage.astro";
 import ReviewSlider from "~/components/mercadolatino/ReviewSlider.astro";
 
 // Images
-import HeroImage from "~/assets/images/mercadolatino/grocery.jpg"
-import FrontStore from "~/assets/images/labonita/labonita_storefront_cropped.png";
-import Service1 from "~/assets/images/mercadolatino/grocery_2.jpg";
-import Service2 from "~/assets/images/mercadolatino/butcher_2.jpg";
-import Service3 from "~/assets/images/labonita/restaurant_cropped.jpg";
-import About from "~/assets/images/mercadolatino/panaderia.jpg";
-import Promotion from "~/assets/images/mercadolatino/chicharon_guac.jpg";
+import HeroImage from "~/assets/images/costasur/tacos.jpg";
+import FrontStore from "~/assets/images/costasur/counter_wide.jpg";
+import Service1 from "~/assets/images/costasur/tacos2.jpg";
+import Service2 from "~/assets/images/costasur/burrito.jpg";
+import Service3 from "~/assets/images/costasur/birria_tacos.jpg";
+import About from "~/assets/images/costasur/counter.jpg";
+import Promotion from "~/assets/images/costasur/tacos3.jpg";
 import reviewAuthors from "~/assets/images/template/review-authors.png";
 
 ---
@@ -28,11 +28,11 @@ import reviewAuthors from "~/assets/images/template/review-authors.png";
 	<Section hero=true class:list={"brand-bg"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
-				<Badge color="primary" title="Fresh Grocery and Restaurant" />
-				<h1 class="font-black">Welcome to La Bonita Grocery in Auburn, WA</h1>
+				<Badge color="primary" title="Fresh Mexican Food in Auburn" />
+				<h1 class="text-brand-secondary">Welcome to Costa Sur <span class="text-brand-primary">Taqueria</span></h1>
 
 				<p>
-					La Bonita Grocery is your go-to Auburn market and kitchen for authentic flavor. From fresh local produce and premium meats to delicious hot meals and daily-baked pan dulce, we have everything you love. Stop by to shop and dine today!
+					Bring your appetite to Auburn’s favorite family-owned taco spot. We serve up hand-pressed tortillas, slow-simmered birria, and vibrant salsas made fresh daily. Taste the tradition of authentic Mexican street food right here in Washington.
 				</p>
 
 				<span class="text-brand-black font-medium">✔ Call Ahead for Takeout</span>
@@ -61,9 +61,9 @@ import reviewAuthors from "~/assets/images/template/review-authors.png";
 	<!-- Dishes -->
 	<Section class:list={"brand-bg"}>
 		<Heading>
-			<h2 slot="heading-title" class="font-black h2">Departments</h2>
+			<h2 slot="heading-title" class="font-black h2">Our Menu</h2>
 			<p slot="heading-content">
-Explore our fresh aisles, custom butcher counter, and authentic kitchen.
+Explore our family recipes, crafted with fresh, local ingredients.
 			</p>
 		</Heading>
 
@@ -76,9 +76,9 @@ Explore our fresh aisles, custom butcher counter, and authentic kitchen.
 						formats={["avif", "webp"]}
 						alt="A description of my image."
 					/>
-					<h3 class="h4 mt-0 font-black">Fresh Aisle</h3>
+					<h3 class="h4 mt-0 font-black">Street Tacos</h3>
 					<p>
-						From organic Washington apples to your favorite pantry staples, we stock everything you need to feed your family. High quality meets everyday low prices.
+						Your choice of perfectly seasoned carne asada, al pastor, or pollo on a warm, doubled corn tortilla. Topped with diced onions, cilantro, and lime.
 					</p>
 				</div>
 			</div>
@@ -91,9 +91,9 @@ Explore our fresh aisles, custom butcher counter, and authentic kitchen.
 						formats={["avif", "webp"]}
 						alt="A description of my image."
 					/>
-					<h3 class="h4 mt-0 font-black">Prime Cuts</h3>
+					<h3 class="h4 mt-0 font-black">Burritos</h3>
 					<p>
-						Our expert in-house butchers offer premium, sustainably raised meats, custom cuts, and house-made sausages. Taste the difference of truly fresh quality.
+						A massive flour tortilla packed with Mexican rice, pinto beans, your choice of meat, melted cheese, fresh pico de gallo, and cool sour cream.
 					</p>
 				</div>
 			</div>
@@ -106,9 +106,9 @@ Explore our fresh aisles, custom butcher counter, and authentic kitchen.
 						formats={["avif", "webp"]}
 						alt="A description of my image."
 					/>
-					<h3 class="h4 mt-0 font-black">Taqueria</h3>
+					<h3 class="h4 mt-0 font-black">Birria and More</h3>
 					<p>
-						Experience authentic Mexican dining! Our kitchen prepares flavorful, traditional meals daily using fresh, high-quality ingredients from our market.
+						Enjoy our famous slow-braised birria served as crispy tacos, cheesy folded quesadillas, or loaded onto warm, traditional toasted torta sandwiches.
 					</p>
 				</div>
 			</div>
@@ -120,10 +120,10 @@ Explore our fresh aisles, custom butcher counter, and authentic kitchen.
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none">
 				<Badge color="secondary" title="$10 Lunch Special" />
-				<h2 slot="heading-title" class="font-black text-brand-secondary h2 !my-4">Chicharrón & Guac Combo</h2>
+				<h2 slot="heading-title" class="font-black text-brand-secondary h2 !my-4">Get 4 Tacos for Only $10</h2>
 				<div slot="heading-content">
 					<p>
-						Get the perfect crunch! Enjoy our crispy, house-made chicharrón paired with fresh, flavorful guacamole for just $10. Grab this authentic deal today!
+						Satisfy your cravings with our unbeatable everyday deal. Mix and match four of your favorite street tacos for just $10. Valid for dine-in or to go!
 					</p>
 
 					<span class="text-brand-secondary font-medium">
@@ -131,7 +131,7 @@ Explore our fresh aisles, custom butcher counter, and authentic kitchen.
 					</span>
 
 					<div class="mt-8">
-						<Button color="secondary" url="/book">Book a table</Button>
+						<Button color="primary" url="/book">Call For Takeout</Button>
 					</div>
 				</div>
 			</div>
@@ -154,12 +154,12 @@ Explore our fresh aisles, custom butcher counter, and authentic kitchen.
 			<Hero>
 				<div slot="hero-content-left" class="prose max-w-none order-2">
 					<div class="text-center not-prose">
-						<Badge color="white" title="What Customers Say" />
+						<Badge color="white" title="Customer Reviews" />
 					</div>
-					<h2 slot="heading-title" class="font-black h4 text-center mt-0 mb-4">Loved by the Auburn Community</h2>
+					<h2 slot="heading-title" class="font-black h4 text-center mt-0 mb-4">What Our Locals Are Saying</h2>
 					<div slot="heading-content">
 						<p class="text-center">
-							Hear from our neighbors about why they love shopping, dining, and supporting La Bonita Grocery.
+							See what our Auburn neighbors love about us. Real, live guest experiences featured below!
 						</p>
 
 						<ReviewSlider />
@@ -198,18 +198,18 @@ Explore our fresh aisles, custom butcher counter, and authentic kitchen.
 	<Section class:list={"brand-bg"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose lg:order-2">
-				<h2 class="font-black">Rooted in Auburn Since Day One</h2>
+				<h2 class="font-black">The Story of Costa Sur Taqueria</h2>
 
 				<p>
-					For years, our grocery store has been more than just a place to buy food—it has been a gathering place for the Auburn community. Family-owned and operated, we started with a simple mission: to provide our neighbors with access to fresh, wholesome, and affordable food while supporting local Washington farmers and vendors.
+					Founded by our family, Costa Sur Taqueria started with a simple mission: to bring the rich, bold flavors of our childhood home in Michoacán straight to the Pacific Northwest. We believe that great food starts with time-honored traditions, which is why our meats are marinated for 24 hours, our salsas are chopped every morning, and our corn tortillas are pressed by hand to order.
 				</p>
 
 				<p>
-				We believe that grocery shopping shouldn't feel like a chore, which is why we pride ourselves on our clean aisles, vibrant displays, and exceptionally friendly service. Whether you are prepping for a family barbecue or just grabbing a quick lunch, we are always happy to welcome you home.
+				Whether you are grabbing a quick lunch break near Game Farm Park or sitting down for a weekend family feast, we welcome you into our kitchen with open arms and full plates. Come taste the passion in every single bite!
 				</p>
 
 				<div class="mt-8">
-					<Button color = "secondary" url="/menu">
+					<Button color = "primary" url="/menu">
 						
 						Get Directions
 					</Button>
@@ -228,5 +228,5 @@ Explore our fresh aisles, custom butcher counter, and authentic kitchen.
 	</Section>
 
 	<!-- Map -->
-	<iframe width="100%" height="600px" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=mercadolatinoauburn&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"></iframe>	
+	<iframe width="100%" height="600px" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=TaqueriaCostaSurYPanaderiaElPadrinoAuburn&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"></iframe>	
 </Layout>

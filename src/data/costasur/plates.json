@@ -1,0 +1,229 @@
+[
+  {
+    "id": 1,
+    "slug": "street-tacos",
+    "prettyName": "Street Tacos",
+    "description": "House-made tortillas topped with onions and cilantro. Choice of Meat: Al Pastor Pork/Chicken, Carnitas, or Carne Asada.",
+    "plates": [
+      {
+        "name": "Three Tacos",
+        "description": "Three street tacos of your choice served with fresh onions and cilantro.",
+        "price": 8.5
+      },
+      {
+        "name": "Five Tacos",
+        "description": "Five street tacos of your choice served with fresh onions and cilantro.",
+        "price": 13.99
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "burrito",
+    "prettyName": "Burrito",
+    "description": "Burrito with Rice, Beans, Guacamole, Tomato, Crème Verde, and Queso.",
+    "plates": [
+      {
+        "name": "Burrito",
+        "description": "Flour tortilla filled with rice, beans, guacamole, tomato, crème verde, queso, and choice of meat.",
+        "price": 9.99
+      },
+      {
+        "name": "Veggie Burrito",
+        "description": "Flour tortilla loaded with rice, beans, fresh guacamole, tomato, crème verde, and melted queso.",
+        "price": 8.99
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "quesadilla",
+    "prettyName": "Quesadilla",
+    "description": "Filled with Onions, Roasted Poblanos, and Queso.",
+    "plates": [
+      {
+        "name": "Quesadilla",
+        "description": "Large flour tortilla grilled with melted queso, onions, roasted poblanos, and your choice of meat.",
+        "price": 8.99
+      },
+      {
+        "name": "Cheese Quesadilla",
+        "description": "Large flour tortilla grilled with a generous blend of melted queso, onions, and roasted poblanos.",
+        "price": 7.5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "torta",
+    "prettyName": "Torta",
+    "description": "Toasted Ciabatta Bun, with Avocado, Crème Verde, Queso, Lettuce, Tomato.",
+    "plates": [
+      {
+        "name": "Torta",
+        "description": "Toasted ciabatta bun loaded with avocado, crème verde, queso, lettuce, tomato, and your choice of meat.",
+        "price": 8.99
+      },
+      {
+        "name": "Veggie Torta",
+        "description": "Toasted ciabatta bun stacked with fresh avocado, crème verde, queso, crisp lettuce, and tomato.",
+        "price": 7.99
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "appetizers",
+    "prettyName": "Appetizers",
+    "description": "Start your meal with our delicious Mexican starters and sides.",
+    "plates": [
+      {
+        "name": "Salsa Duo",
+        "description": "Tomato habanero and tomatillo salsa served with crispy house-made chips.",
+        "price": 4.5
+      },
+      {
+        "name": "Guac and Chips",
+        "description": "Fresh avocado, cilantro, lime, onion, and tomato, served with crisp tortilla chips.",
+        "price": 5.99
+      },
+      {
+        "name": "Cheese Dip",
+        "description": "House-made queso sauce served warm with crisp tortilla chips.",
+        "price": 7.99
+      },
+      {
+        "name": "Nachos",
+        "description": "Chips topped with a melted queso blend, jalapeños, crème verde, onions, beans, tomatoes, and cilantro.",
+        "price": 9.0
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "birria",
+    "prettyName": "Birria",
+    "description": "Traditional slow-simmered beef specialties flavored with authentic spices.",
+    "plates": [
+      {
+        "name": "Beef Birria Soup",
+        "description": "Braised beef in a rich broth, topped with onions and cilantro. Served with a side of tortillas.",
+        "price": 8.99
+      },
+      {
+        "name": "Soft Birria Taco",
+        "description": "Soft corn tortilla filled with braised beef birria, topped with fresh onions and cilantro.",
+        "price": 3.5
+      },
+      {
+        "name": "Crispy Birria Taco",
+        "description": "Crispy grilled corn tortilla stuffed with savory braised beef birria.",
+        "price": 3.5
+      },
+      {
+        "name": "Cheesy Crispy Birria Taco",
+        "description": "Crispy grilled corn tortilla packed with melted cheese and braised beef birria.",
+        "price": 4.0
+      },
+      {
+        "name": "Consome",
+        "description": "Our delicious, rich beef stock broth seasoned perfectly for dipping your tacos.",
+        "price": 3.0
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "sides",
+    "prettyName": "Sides",
+    "description": "Extra accompaniments and single item additions for your meal.",
+    "plates": [
+      {
+        "name": "Spanish Rice",
+        "description": "Traditional seasoned savory Mexican red rice.",
+        "price": 2.0
+      },
+      {
+        "name": "Black Beans",
+        "description": "Slow-simmered black beans cooked with traditional herbs.",
+        "price": 2.0
+      },
+      {
+        "name": "Side of Guacamole",
+        "description": "A fresh side portion of our creamy mashed avocado guacamole.",
+        "price": 1.99
+      },
+      {
+        "name": "Single Street Taco (Al Pastor / Carnitas)",
+        "description": "A single street taco topped with onions and cilantro, with your choice of Al Pastor or Carnitas.",
+        "price": 2.95
+      },
+      {
+        "name": "Single Street Taco (Carne Asada)",
+        "description": "A single street taco filled with grilled carne asada steak, onions, and cilantro.",
+        "price": 3.25
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "dessert",
+    "prettyName": "Dessert",
+    "description": "Sweet traditional Mexican treats to complete your dining experience.",
+    "plates": [
+      {
+        "name": "Caramel Flan",
+        "description": "Traditional sweet, rich custard dessert glazed with a smooth caramel layer.",
+        "price": 4.99
+      },
+      {
+        "name": "Tres Leches",
+        "description": "Classic sponge cake soaked in a sweet three-milk blend.",
+        "price": 3.99
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "drinks",
+    "prettyName": "Drinks",
+    "description": "Refresh yourself with our selection of traditional Mexican glass sodas and beverages.",
+    "plates": [
+      {
+        "name": "Mexican Coke",
+        "description": "Classic imported glass bottle Coca-Cola sweetened with pure cane sugar.",
+        "price": 2.5
+      },
+      {
+        "name": "Mexican Sprite",
+        "description": "Refreshing lemon-lime sprite served in an imported glass bottle.",
+        "price": 2.5
+      },
+      {
+        "name": "Mexican Orange Fanta",
+        "description": "Vibrant and bubbly orange soda in a classic glass bottle.",
+        "price": 2.5
+      },
+      {
+        "name": "Mexican Pepsi",
+        "description": "Classic sweet refreshing cola drink served in a glass bottle.",
+        "price": 2.5
+      },
+      {
+        "name": "Mexican Squirt",
+        "description": "Tangy and refreshing grapefruit soda in a traditional glass bottle.",
+        "price": 2.5
+      },
+      {
+        "name": "Jarritos",
+        "description": "Imported Mexican sodas. Choice of Lime, Tamarind, Pineapple, Mandarin, or Guava.",
+        "price": 2.5
+      },
+      {
+        "name": "Arrowhead Water",
+        "description": "Chilled pure drinking bottled spring water.",
+        "price": 1.0
+      }
+    ]
+  }
+]

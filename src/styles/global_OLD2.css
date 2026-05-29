@@ -177,18 +177,18 @@ h6 {
 /* Display & H1: All Caps, Bold weight matching the main logo lettering */
 h1,
 .h1 {
-  @apply font-bold uppercase text-5xl lg:text-7xl;
+  @apply font-bold text-5xl lg:text-7xl;
 }
 
-/* Subheadings (H2, H3): Semi-Bold weight, Uppercase, with 0.15em letter-spacing */
+/* Subheadings (H2, H3): Semi-Bold weight, with 0.15em letter-spacing */
 h2,
 .h2 {
-  @apply font-semibold uppercase tracking-[0.15em] text-5xl lg:text-6xl;
+  @apply font-semibold text-5xl lg:text-6xl;
 }
 
 h3,
 .h3 {
-  @apply font-semibold uppercase tracking-[0.15em] text-4xl lg:text-5xl;
+  @apply font-semibold text-4xl lg:text-5xl;
 }
 
 h4,

@@ -6,7 +6,7 @@ import { Picture } from "astro:assets";
 import { getCollection, getEntry } from "astro:content";
 
 // const gallery = await getCollection("gallery");
-const galleryData = await getEntry("gallery", "labonita/gallery");
+const galleryData = await getEntry("gallery", "costasur/gallery");
 const gallery = galleryData?.data;
 ---
 
@@ -15,7 +15,7 @@ const gallery = galleryData?.data;
 		<Heading>
 			<h1 slot="heading-title" class="font-black h2">Gallery</h1>
 			<p slot="heading-content">
-				Explore our store through photos and see what makes our market so special.
+				See our fresh street tacos, loaded burritos, and plates made daily in Auburn.
 			</p>
 		</Heading>
 	</Section>
