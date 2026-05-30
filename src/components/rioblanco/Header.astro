@@ -1,7 +1,7 @@
 ---
-import { menuMain } from "~/data/teriyaki2u/menus.js";
+import { menuMain } from "~/data/rioblanco/menus.js";
 import { Picture, Image } from "astro:assets";
-import Logo from "~/assets/images/teriyaki2u/teriyaki2u_logo.png";
+import Logo from "~/assets/images/rioblanco/rioblanco_logo.png";
 
 const rmTrailingSlash = (path: string): string => {
   return path.endsWith("/") && path.length > 1 
@@ -42,17 +42,18 @@ const pathname = rmTrailingSlash(Astro.url.pathname);
 				</button>
 			</div>
 			<Picture
-    class="h-[70px] w-[162px] object-contain" 
-    src={Logo}
-    width={162}
-    height={70}
-    widths={[162, 324]} 
-    sizes="162px" 
-    formats={["avif", "webp"]}
-    alt="Teriyaki 2U Logo"
-    loading="eager"
-    fetchpriority="high"
-/>
+				class="h-[150px] w-[129px] object-contain" 
+				src={Logo}
+				width={129}
+				height={150}
+				widths={[129, 258]} 
+				sizes="129px" 
+				formats={["avif", "webp"]}
+				alt="Rio Blanco Restaurant Logo"
+				loading="eager"
+				fetchpriority="high"
+			/>
+
 			<div class="hidden lg:flex lg:gap-x-12 lg:items-center ">
 				{
 					menuMain.map((item) => (
@@ -80,8 +81,8 @@ const pathname = rmTrailingSlash(Astro.url.pathname);
 				x-cloak
 			>
 				<div class="flex items-center justify-between">
-					<a href="/teriyaki2u" class="-m-1.5 p-1.5">
-						<p class="font-bold text-4xl text-brand-primary">Teriyaki <span class="text-brand-secondary">2u</span></p>
+					<a href="/rioblanco" class="-m-1.5 p-1.5">
+						<p class="font-bold text-4xl text-brand-secondary">Rio <span class="text-brand-primary">Blanco</span></p>
 					</a>
 					<button type="button" class="-m-2.5 p-2.5 text-brand-primary" @click="open = false">
 						<span class="sr-only">Close menu</span>

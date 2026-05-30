@@ -1,0 +1,82 @@
+---
+import Layout from "~/layouts/rioblanco/Layout.astro";;
+import Section from "~/components/Section.astro";
+import Hero from "~/components/Hero.astro";
+import { Picture } from "astro:assets";
+import Badge from "~/components/Badge.astro";
+import Button from "~/components/Button.astro";
+import ButtonCallUs from "~/components/gingerteriyaki/ButtonCallUs.astro";
+import Article from "~/components/Article.astro";
+
+// Images
+import About from "~/assets/images/rioblanco/restaurant2_cropped.jpg";
+
+
+---
+
+<Layout>
+	<Section hero=true class:list={"brand-bg"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
+				<Badge color="secondary" title="Rio Blanco Restaurant in Auburn, WA" />
+				<h1 class="font-black text-brand-black">The Roots of  <span class ="text-brand-secondary">Rio Blanco Mexican </span>Restaurant</h1>
+
+				<p>
+					Our story begins with a deep love for the vibrant coastal and street food traditions of Mexico. We wanted to bring those genuine, sun-soaked flavors directly to the Pacific Northwest, creating a welcoming neighborhood gathering place for the community of Auburn.
+				</p>
+
+				<span class="text-brand-primary font-medium">✔ Cater Your Next Event</span>
+
+				<div class="mt-8 flex items-center gap-x-8">
+					<Button url="/book">Get Directions</Button>
+					<ButtonCallUs />
+				</div>
+			</div>
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto image-blob"}
+					src={About}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+					loading={"eager"}
+					fetchpriority={"high"}
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+	<Section class:list={'brand-bg'}>
+		<Article>
+			<h2>Our Family Recipe</h2>
+			<p>
+				Passed down through generations, our family recipes are the heartbeat of our kitchen. From our complexly spiced, slow-simmered beef birria to our classic marinades, we honor traditional cooking methods to ensure that every single bite you take is packed with soul.
+			</p>
+
+			<h3>Freshness in Every Bite</h3>
+			<blockquote>"Family Owned Restaurant Dedicated To Our Community"</blockquote>
+			<p>
+				We believe that great food starts with premium ingredients. That is why our corn tortillas are hand-pressed daily, our salsas are chopped every morning, and our meats are never frozen.
+			</p>
+
+			<h3>Rated 4.5 Stars on Google</h3>
+			<p>
+			As a proud local business, we love feeding our Washington neighbors. Whether you are grabbing a quick lunch of street tacos on your work break, ordering a big burrito to go, or sitting down for a comforting bowl of beef birria soup with your family on the weekend, we are honored to be your go-to local taqueria.  Every guest who walks through our doors is treated like an extension of our own family, ensuring a memorable dining experience. 
+			</p>
+
+		
+
+			<h4>What Makes Us Special?</h4>
+			<ul>
+				<li><strong>Flavor Since 2002:</strong> Decades of perfected family street-food recipes.</li>
+				<li><strong>Always Made Fresh:</strong> Tortillas hand-pressed and meat grilled to order.</li>
+				<li><strong>True PNW Tradition:</strong> Generous, authentic portions right here in Auburn.</li>
+			</ul>
+
+			<h3>Join Us At Our Table Today</h3>
+			<p>
+				Craving authentic Mexican street food? Come visit Rio Blanco Restaurant in Auburn today and taste the difference that scratch-made passion makes. We cannot wait to serve you a delicious meal!
+			</p>
+		</Article>
+	</Section>
+</Layout>

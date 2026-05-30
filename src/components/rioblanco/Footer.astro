@@ -1,0 +1,35 @@
+---
+import { menuMain } from "~/data/rioblanco/menus.js";
+const currentYear = new Date().getFullYear();
+import { siteName } from "~/data/gingerteriyaki/config";
+import { Picture, Image } from "astro:assets";
+import Logo from "~/assets/images/rioblanco/rioblanco_logo.png";
+
+---
+
+<footer class="bg-brand-black text-white">
+	<div class="container pt-16 pb-8">
+		<Picture
+    class="mx-auto h-[150px] w-[129px] object-contain" 
+    src={Logo}
+    width={129}
+    height={150}
+    widths={[129, 258]} 
+    sizes="129px" 
+    formats={["avif", "webp"]}
+    alt="Rio Blanco Restaurant Logo"
+    loading="eager"
+    fetchpriority="high"
+/>
+		<nav class="flex flex-col sm:flex-row items-center justify-center gap-x-12 gap-y-3 font-medium mt-6" aria-label="Footer">
+			{
+				menuMain.map((item) => (
+					<a href={item.url} class="hover:underline">
+						{item.name}
+					</a>
+				))
+			}
+		</nav>
+		<p class="mt-10 text-center text-sm">&copy; {currentYear} {siteName}. All rights reserved. <a class="underline" href="/privacy-policy">Privacy policy</a></p>
+	</div>
+</footer>

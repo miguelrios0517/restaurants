@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "slug": "platillos-tradicionales",
+    "prettyName": "Traditional Platters",
+    "description": "Authentic full-sized Mexican entrees served with a side of Mexican red rice and your choice of refried or black beans.",
+    "plates": [
+      {
+        "name": "Carne Asada Platter",
+        "description": "Premium charbroiled skirt steak seasoned with citrus and Mexican spices. Served with grilled green onions, a roasted jalapeño, fresh guacamole, and warm corn or flour tortillas.",
+        "price": 17.99
+      },
+      {
+        "name": "Carnitas Platter",
+        "description": "Slow-simmered, tender pork shoulder crisp on the edges. Served with a side of fresh pico de gallo, handmade guacamole, pickled red onions, and warm tortillas.",
+        "price": 15.49
+      },
+      {
+        "name": "Pollo Asado Platter",
+        "description": "A juicy, achiote-marinated grilled chicken breast topped with grilled onions and bell peppers. Served alongside fresh lime and warm tortillas.",
+        "price": 14.99
+      },
+      {
+        "name": "Chile Relleno Dinner",
+        "description": "A large roasted Poblano pepper stuffed with melted Monterey Jack cheese, dipped in a fluffy egg batter, fried golden brown, and wrapped or smothered in our house ranchera sauce.",
+        "price": 14.25
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "antojitos-y-combinaciones",
+    "prettyName": "Tacos, Burritos & Classics",
+    "description": "Our selection of traditional Mexican staples, crafted into satisfying, complete plates served with Mexican red rice and savory beans.",
+    "plates": [
+      {
+        "name": "Plato de Tacos Tradicional",
+        "description": "Three house-made corn tortilla tacos with your choice of Carne Asada or Al Pastor, topped with fresh onion and cilantro.",
+        "price": 12.99
+      },
+      {
+        "name": "Burrito Mojado Platter (Wet Burrito)",
+        "description": "Giant flour tortilla loaded with rice, beans, and your choice of protein, smothered completely in hot red or green sauce and melted cheese. Garnished with sour cream and guacamole.",
+        "price": 12.99
+      },
+      {
+        "name": "Quesadilla Dinner Platter",
+        "description": "Large grilled flour tortilla folded with a generous melt of Monterey Jack cheese, sautéed onions, roasted poblano peppers, and your choice of meat. Plated with sour cream and fresh guacamole.",
+        "price": 11.99
+      },
+      {
+        "name": "Torta Tradicional Dinner",
+        "description": "A toasted crusty bolillo roll layered with choice of meat, fresh avocado, lettuce, tomato, queso, and a spread of black beans. Served with a side of rice and beans.",
+        "price": 12.5
+      },
+      {
+        "name": "Chimichanga Platter",
+        "description": "A large flour tortilla stuffed with seasoned shredded chicken or beef, fried crispy golden brown, then topped with warm house queso dip.",
+        "price": 13.5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "enchiladas",
+    "prettyName": "Enchiladas",
+    "description": "Three rolled corn tortillas baked to perfection and served with our signature Mexican rice and beans.",
+    "plates": [
+      {
+        "name": "Enchiladas Verdes",
+        "description": "Three shredded chicken enchiladas smothered in a tangy, hot tomatillo green sauce, topped with melted queso, sour cream, and cotija cheese.",
+        "price": 13.99
+      },
+      {
+        "name": "Enchiladas Rojas",
+        "description": "Three seasoned shredded beef enchiladas drenched in our rich, earthy red chili sauce, blanketed with melted mixed cheeses and raw onion slices.",
+        "price": 14.25
+      },
+      {
+        "name": "Enchiladas de Mole",
+        "description": "Three tender chicken enchiladas covered in our complex, house-made chocolate-and-chile savory mole sauce, sprinkled with toasted sesame seeds and fresh onions.",
+        "price": 14.99
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "fajitas",
+    "prettyName": "Sizzling Fajitas",
+    "description": "Served sizzling hot over a bed of sautéed bell peppers and sweet onions. Accompanied by a platter of rice, beans, sour cream, guacamole, and warm tortillas.",
+    "plates": [
+      {
+        "name": "Sizzling Steak Fajitas",
+        "description": "Tender strips of marinated skirt steak grilled crisp with sweet bell peppers and onions.",
+        "price": 17.99
+      },
+      {
+        "name": "Sizzling Chicken Fajitas",
+        "description": "Juicy breast of chicken strips marinated in citrus herbs, flame-broiled with bell peppers and onions.",
+        "price": 16.49
+      },
+      {
+        "name": "Fajitas Supremas (Combo)",
+        "description": "The ultimate combination of grilled steak, chicken, and tiger shrimp tossed with bell peppers and onions.",
+        "price": 19.99
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "mariscos",
+    "prettyName": "Seafood Plates",
+    "description": "Coastal Mexican specialties featuring fresh seafood components, served with seasoned rice and avocado salad.",
+    "plates": [
+      {
+        "name": "Camarones al Ajo",
+        "description": "Plump tiger shrimp sautéed in a rich, buttery garlic sauce with mushrooms and broken guajillo chiles.",
+        "price": 17.5
+      },
+      {
+        "name": "Camarones a la Diabla",
+        "description": "Large shrimp tossed in a fiercely fiery red habanero and chipotle sauce, balanced with sweet onions.",
+        "price": 17.5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "appetizers",
+    "prettyName": "Appetizers",
+    "description": "Premium starters to share before your main platters arrive.",
+    "plates": [
+      {
+        "name": "Tableside Guacamole & Chips",
+        "description": "Freshly mashed avocado mixed with lime juice, sea salt, cilantro, onions, and tomato. Served with hot corn chips.",
+        "price": 7.99
+      },
+      {
+        "name": "Queso Fundido",
+        "description": "Melted Monterey Jack cheese bubbling in a hot skillet, topped with spicy house-made chorizo. Served with warm corn tortillas for rolling.",
+        "price": 9.5
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "dessert",
+    "prettyName": "Desserts",
+    "description": "Sweet, house-crafted Mexican desserts to complete your dining experience.",
+    "plates": [
+      {
+        "name": "Caramel Flan",
+        "description": "Traditional sweet, rich egg custard baked fresh and glazed with a smooth, deep caramel layer.",
+        "price": 5.5
+      },
+      {
+        "name": "Tres Leches Cake",
+        "description": "Authentic vanilla sponge cake soaked heavily in a sweet three-milk blend, topped with whipped cream.",
+        "price": 4.99
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "drinks",
+    "prettyName": "Beverages",
+    "description": "House-crafted traditional cold drinks and premium imported glass sodas.",
+    "plates": [
+      {
+        "name": "Aguas Frescas Grande (Horchata)",
+        "description": "Sweet, creamy house-brewed rice milk drink flavored deeply with cinnamon and Mexican vanilla.",
+        "price": 3.75
+      },
+      {
+        "name": "Aguas Frescas Grande (Jamaica)",
+        "description": "Sweetened, crisp tart infusion of hibiscus flower petals brewed fresh daily.",
+        "price": 3.75
+      },
+      {
+        "name": "Mexican Coke",
+        "description": "Classic imported glass bottle Coca-Cola sweetened exclusively with pure cane sugar.",
+        "price": 2.75
+      },
+      {
+        "name": "Jarritos",
+        "description": "Imported natural fruit sodas. Choice of Lime, Tamarind, Pineapple, or Mandarin.",
+        "price": 2.75
+      }
+    ]
+  }
+]

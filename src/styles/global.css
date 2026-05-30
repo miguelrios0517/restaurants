@@ -76,6 +76,19 @@
   --theme-font-body: "Quicksand", sans-serif;
 }
 
+[data-theme="rio-blanco"] {
+  /* Brand Colors */
+  --brand-primary: #2e7d32;
+  --brand-secondary: #d85a1b;
+  --brand-black: #261c14;
+  --brand-bg: #fdfbf7;
+  --brand-reviews: #f5ece1;
+
+  /* Typography Reference */
+  --theme-font-heading: "DM Serif Display", serif;
+  --theme-font-body: "Plus Jakarta Sans", sans-serif;
+}
+
 @utility container {
   margin-inline: auto;
   padding-inline: 2rem;
@@ -383,25 +396,42 @@ label {
 @font-face {
   font-family: "Fredoka";
   font-style: normal;
-  font-weight: 300 700;
+  font-weight: 300 600;
   font-stretch: 75% 125%; /* Handles the width (wdth) axis of the font */
   font-display: swap;
-  src:
-    url("/fonts/fredoka/Fredoka-VariableFont_wdth,wght.ttf")
-      format("truetype-variations"),
-    url("/fonts/fredoka/Fredoka-VariableFont_wdth,wght.ttf") format("truetype");
+  src: url("/fonts/fredoka/Fredoka-VariableFont_wdth,wght.ttf")
+    format("truetype-variations");
 }
 
 /* Quicksand Variable: (Keep this matching your project's quicksand file) */
 @font-face {
   font-family: "Quicksand";
   font-style: normal;
-  font-weight: 300 700;
+  font-weight: 400 700;
   font-display: swap;
-  src:
-    url("/fonts/quicksand/Quicksand-VariableFont_wght.woff2")
-      format("woff2-supports-variations"),
-    url("/fonts/quicksand/Quicksand-VariableFont_wght.woff2") format("woff2");
+  src: url("/fonts/quicksand/Quicksand-VariableFont_wght.ttf")
+    format("truetype-variations");
+}
+
+/* 1. Static Heading Font */
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Variable Body Font */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  /* Tell the browser this single file supports a continuous range of weights */
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf")
+    format("truetype");
 }
 
 /* Loader adapts to theme text color */
@@ -519,6 +549,6 @@ label {
 .h1-style {
   font-family: var(--theme-font-heading);
   /* 500 is Medium, 600 is Semi-Bold. Pick what looks best for your UI */
-  font-weight: 600; 
+  font-weight: 600;
   color: var(--brand-primary);
 }
