@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Chicken Teriyaki",
+    "image": "/src/assets/images/gingerteriyaki/gallery/teriyaki.jpeg",
+    "alt": "Delicious flame-broiled chicken teriyaki"
+  },
+  {
+    "id": 2,
+    "title": "Beef Teriyaki",
+    "image": "/src/assets/images/gingerteriyaki/gallery/teriyaki2.jpeg",
+    "alt": "Sizzling beef teriyaki with signature sweet glaze"
+  },
+  {
+    "id": 3,
+    "title": "Spicy Teriyaki Combo",
+    "image": "/src/assets/images/gingerteriyaki/gallery/teriyaki3.jpeg",
+    "alt": "Spicy teriyaki dish served with steaming rice"
+  },
+  {
+    "id": 4,
+    "title": "House Fried Rice",
+    "image": "/src/assets/images/gingerteriyaki/gallery/friedrice.jpeg",
+    "alt": "Wok-tossed chicken and vegetable fried rice"
+  },
+  {
+    "id": 5,
+    "title": "Chicken Katsu",
+    "image": "/src/assets/images/gingerteriyaki/gallery/katsu.jpeg",
+    "alt": "Crispy panko-breaded chicken katsu cutlet"
+  },
+  {
+    "id": 6,
+    "title": "Pork Gyoza",
+    "image": "/src/assets/images/gingerteriyaki/gallery/gyoza.jpeg",
+    "alt": "Pan-fried pork dumplings served with dipping sauce"
+  }
+]
